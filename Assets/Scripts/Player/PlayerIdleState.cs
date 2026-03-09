@@ -15,6 +15,7 @@ public class PlayerIdleState : PlayerState {
     public override void Update(){
         if(player.DashPressed && player.canDash){
             // Transition to dash state
+            stateMachine.ChangeState(player.dashState);
             return;
         }
 

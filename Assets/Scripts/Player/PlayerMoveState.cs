@@ -13,12 +13,16 @@ public class PlayerMoveState : PlayerState {
     }
 
     public override void FixedUpdate(){
-        player.SetVelocity(player.MoveInput * player.moveSpeed);
+
+        // Normalize to prevent going faster in diagonals
+        player.SetVelocity(player.MoveInput.normalized * player.moveSpeed);
     }
 
     public override void Update(){
         if(player.DashPressed && player.canDash){
             // Transition to dash state
+            player.SetVelocity(Vector2.zero);
+            stateMachine.ChangeState(player.dashState);
             return;
         }
 
