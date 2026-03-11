@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
     public PlayerIdleState idleState {get; private set;}
     public PlayerMoveState moveState {get; private set;}
     public PlayerDashState dashState {get; private set;}
-        // Dash State
+    // Dash State
 
     void Awake(){
         rb = GetComponent<Rigidbody2D>();
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
         dashState = new PlayerDashState(stateMachine, this);
         MoveInput = new Vector2(0,0);
     }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -61,7 +63,7 @@ public class PlayerController : MonoBehaviour
         stateMachine.Update(); 
 
         // Update mouse position and direction
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // This can cause lag but only in the editor
         cursor.GetComponent<Transform>().position = new Vector2(mousePos.x, mousePos.y);
         direction = mousePos - transform.position;
 

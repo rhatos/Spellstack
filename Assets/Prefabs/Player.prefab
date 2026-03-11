@@ -109,9 +109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateText: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 15
   canDash: 1
-  dashSpeed: 10
+  dashSpeed: 20
   dashTime: 0.25
   dashCooldown: 1
   dashCooldownCurrent: 0
