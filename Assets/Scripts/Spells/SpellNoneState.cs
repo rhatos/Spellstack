@@ -34,21 +34,25 @@ public class SpellNoneState : SpellState {
         if(Keyboard.current[Key.Digit2].wasPressedThisFrame){
             Debug.Log("NONE: Spell 2 pressed");
             spellController.spellInput = 2;
+            stateMachine.ChangeState(spellController.spellSelectedState);
         }
 
         if(Keyboard.current[Key.Digit3].wasPressedThisFrame){
             Debug.Log("NONE: Spell 3 pressed");
             spellController.spellInput = 3;
+            stateMachine.ChangeState(spellController.spellSelectedState);
         }
 
         if(Keyboard.current[Key.Digit4].wasPressedThisFrame){
             Debug.Log("NONE: Spell 4 pressed");
             spellController.spellInput = 4;
+            stateMachine.ChangeState(spellController.spellSelectedState);
         }       
        
         if(Keyboard.current[Key.Digit5].wasPressedThisFrame){
             Debug.Log("NONE: Spell 5 pressed");
             spellController.spellInput = 5;
+            stateMachine.ChangeState(spellController.spellSelectedState);
         }
     }
 

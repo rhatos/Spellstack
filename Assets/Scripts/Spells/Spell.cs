@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CircleCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Spell : MonoBehaviour
 {
@@ -28,9 +28,10 @@ public class Spell : MonoBehaviour
 
     }
 
-    void onTriggerEnter2D(Collider2D other){
+    void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Enemy")){
             spellData.OnHit(other.gameObject, this.gameObject);
+            Debug.Log("Hit Enemy");
         }
     }
 }
