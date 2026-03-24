@@ -41,7 +41,7 @@ public class SpellController : MonoBehaviour
         stateMachine.ChangeState(spellNoneState);
 
         equippedSpells[0] = spellCatalogue.getSpellByID(1);
-        Debug.Log(equippedSpells[0]);
+        equippedSpells[1] = spellCatalogue.getSpellByID(2);
 
     }
 
@@ -55,11 +55,18 @@ public class SpellController : MonoBehaviour
 
 
     public void CastSpell(int combo){
-        Debug.Log("CASTING: " + spellInput + " + " + combo);
 
         // Include logic to determine which spell to cast.
         if(spellInput != combo){
             //... handle combo
+            // Just hardcoding for now, will implement a better system later
+            if(spellInput + combo == 3){
+                currentSpell = spellCatalogue.getSpellByID(6);
+                GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
+                Spell spellProjectile = spellObject.GetComponent<Spell>();
+                spellProjectile.spellData = currentSpell;
+                Destroy(spellObject, 5f);
+            }
         } else {
             if(equippedSpells[spellInput-1] != null){
                 currentSpell = equippedSpells[spellInput-1];

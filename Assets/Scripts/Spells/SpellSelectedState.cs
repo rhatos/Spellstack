@@ -10,9 +10,7 @@ public class SpellSelectedState : SpellState {
         this.spellController = spellController;
     }
 
-    public override void Enter(){
-       Debug.Log("SPELL SELECTED: " + spellController.spellInput); 
-    }
+    public override void Enter(){}
 
     public override void Exit(){
 
@@ -25,7 +23,6 @@ public class SpellSelectedState : SpellState {
     public override void Update(){
 
         if(Keyboard.current[Key.Digit1].wasPressedThisFrame){
-            Debug.Log("SPELL SELECTED: " + spellController.spellInput + " + Spell 1 pressed");
 
             // Then prompt spell controller to create spell object from keybind 1
             spellController.CastSpell(1);
@@ -34,8 +31,7 @@ public class SpellSelectedState : SpellState {
             stateMachine.ChangeState(spellController.spellNoneState);
         } 
 
-        if(Keyboard.current[Key.Digit2].wasPressedThisFrame){
-            Debug.Log("SPELL SELECTED: " + spellController.spellInput + " + Spell 2 pressed");
+        else if(Keyboard.current[Key.Digit2].wasPressedThisFrame){
 
             // Then prompt spell controller to create spell object from keybind 1
             spellController.CastSpell(2);
@@ -44,8 +40,7 @@ public class SpellSelectedState : SpellState {
             stateMachine.ChangeState(spellController.spellNoneState);
         }
 
-        if(Keyboard.current[Key.Digit3].wasPressedThisFrame){
-            Debug.Log("SPELL SELECTED: " + spellController.spellInput + " + Spell 3 pressed");
+        else if(Keyboard.current[Key.Digit3].wasPressedThisFrame){
 
             // Then prompt spell controller to create spell object from keybind 1
             spellController.CastSpell(3);
@@ -54,8 +49,7 @@ public class SpellSelectedState : SpellState {
             stateMachine.ChangeState(spellController.spellNoneState);
         }
 
-        if(Keyboard.current[Key.Digit4].wasPressedThisFrame){
-            Debug.Log("SPELL SELECTED: " + spellController.spellInput + " + Spell 4 pressed");
+        else if(Keyboard.current[Key.Digit4].wasPressedThisFrame){
 
             // Then prompt spell controller to create spell object from keybind 1
             spellController.CastSpell(4);
@@ -64,8 +58,7 @@ public class SpellSelectedState : SpellState {
             stateMachine.ChangeState(spellController.spellNoneState);
         }       
        
-        if(Keyboard.current[Key.Digit5].wasPressedThisFrame){
-            Debug.Log("SPELL SELECTED: " + spellController.spellInput + " + Spell 5 pressed");
+        else if(Keyboard.current[Key.Digit5].wasPressedThisFrame){
 
             // Then prompt spell controller to create spell object from keybind 1
             spellController.CastSpell(5);

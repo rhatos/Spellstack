@@ -18,6 +18,10 @@ public class Spell : MonoBehaviour
             if(spellData.speed > 0){
                 rb.linearVelocity = spellData.direction.normalized * spellData.speed;
             }
+
+            float angle = Mathf.Atan2(spellData.direction.y, spellData.direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
         }
         
     }
