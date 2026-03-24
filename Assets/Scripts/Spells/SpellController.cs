@@ -1,8 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class SpellController : MonoBehaviour
 {
+    public TextMeshProUGUI stateText;
 
     public PlayerController player;
     
@@ -12,15 +14,18 @@ public class SpellController : MonoBehaviour
     public SpellNoneState spellNoneState;
 
     // State 2: Spell selected
+    public SpellSelectedState spellSelectedState;
     // State 3: Cast spell or combine spell
 
     // inputs (probably better way to do this)
     public int spellInput = 0;
+    public SpellData currentSpell;
 
     void Awake(){
 
         stateMachine = new StateMachine();
         spellNoneState = new SpellNoneState(stateMachine, player, this);
+        spellSelectedState = new SpellSelectedState(stateMachine, player, this);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,23 +38,19 @@ public class SpellController : MonoBehaviour
     void Update()
     {
        stateMachine.Update(); 
+       stateText.text = "Spell State: " + stateMachine.CurrentState.ToString() + " | " + spellInput;
+       if(currentSpell != null) currentSpell.direction = player.direction;
     }
 
-    void UpdateSpellInput(){
 
-        // Programming SIN
-        // Definitely a better way to do this.
-        if(Keyboard.current[Key.Digit1].wasPressedThisFrame){
-            spellInput = 1;
-        } else if(Keyboard.current[Key.Digit2].wasPressedThisFrame){
-            spellInput = 2;
-        } else if(Keyboard.current[Key.Digit3].wasPressedThisFrame){
-            spellInput = 3;
-        } else if(Keyboard.current[Key.Digit4].wasPressedThisFrame){
-            spellInput = 4;
-        } else if(Keyboard.current[Key.Digit5].wasPressedThisFrame){
-            spellInput = 5;
-        }
-        
+    public void CastSpell(int combo){
+        Debug.Log("CASTING: " + spellInput + " + " + combo);
+
+        // Include logic to determine which spell to cast.
+
+        GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
+        Spell spellProjectile = spellObject.GetComponent<Spell>();
+        spellProjectile.spellData = currentSpell;
+        Destroy(spellObject, 5f);
     }
 }
