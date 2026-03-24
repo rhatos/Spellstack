@@ -317,7 +317,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 8717407456538857613, guid: 4e8533bfaed86a5478e5c998c65cb9d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 1820127800}
   - component: {fileID: 1820127799}
   - component: {fileID: 1820127798}
+  - component: {fileID: 1820127802}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -920,12 +921,12 @@ Camera:
     x: 0
     y: 0
     width: 1
-    height: 1
+    height: 0.9992193
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.29
+  orthographic size: 7.5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -956,6 +957,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1820127802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820127797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
+  m_ComponentVersion: 1
+  m_AssetsPPU: 32
+  m_RefResolutionX: 854
+  m_RefResolutionY: 480
+  m_CropFrame: 4
+  m_GridSnapping: 2
+  m_FilterMode: 1
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &1838713047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +1061,7 @@ MonoBehaviour:
   stateText: {fileID: 1082599694}
   player: {fileID: 5217373288333724854}
   spellInput: 0
+  equippedSpells: []
   currentSpell: {fileID: 11400000, guid: 3a8f16ca4e4333161b7fe3924342b89f, type: 2}
   spellCatalogue: {fileID: 11400000, guid: 56fa4b89fe1ac71b5b22ef1de02d7235, type: 2}
 --- !u!4 &2000466972
@@ -1374,7 +1400,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0

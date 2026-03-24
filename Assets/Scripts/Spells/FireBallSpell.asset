@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f507985c04cc5fcf8a134da0614e3dcf, type: 3}
   m_Name: FireBallSpell
   m_EditorClassIdentifier: Assembly-CSharp::FireBallSO
-  spellName: 
-  projectilePrefab: {fileID: 0}
+  spellName: Fire Ball
+  projectilePrefab: {fileID: 6828925168349706206, guid: 46acec16078e9478993ee6f81df9ad66, type: 3}
   manaCost: 0
   icon: {fileID: 0}
-  speed: 0
-  id: 0
-  direction: {x: 0, y: 0}
+  speed: 18
+  id: 6
+  direction: {x: -6.2843466, y: 11.6980295}

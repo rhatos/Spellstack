@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpellCatalog
   allSpellsList:
   - {fileID: 11400000, guid: 3a8f16ca4e4333161b7fe3924342b89f, type: 2}
+  - {fileID: 11400000, guid: fd995149a7b75fc819e572754464c661, type: 2}
+  - {fileID: 11400000, guid: c8edbf4c882d984808b6f4bfdb026709, type: 2}
