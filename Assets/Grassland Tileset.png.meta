@@ -1,0 +1,1193 @@
+fileFormatVersion: 2
+guid: 890b06e515996ea479e185b3583d80fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3468335221829518024
+    second: Grassland Tileset_0
+  - first:
+      213: -3192387756638750637
+    second: Grassland Tileset_1
+  - first:
+      213: -288222518327382603
+    second: Grassland Tileset_2
+  - first:
+      213: 3216954917108893235
+    second: Grassland Tileset_3
+  - first:
+      213: 1613331070335340668
+    second: Grassland Tileset_4
+  - first:
+      213: 1186800127147684954
+    second: Grassland Tileset_5
+  - first:
+      213: 1024037918609122555
+    second: Grassland Tileset_6
+  - first:
+      213: 5040912986734265581
+    second: Grassland Tileset_7
+  - first:
+      213: -8737342613890201808
+    second: Grassland Tileset_8
+  - first:
+      213: -7481337024795054456
+    second: Grassland Tileset_9
+  - first:
+      213: -1361260875088832005
+    second: Grassland Tileset_10
+  - first:
+      213: -3558934492318336135
+    second: Grassland Tileset_11
+  - first:
+      213: 8926102273477323702
+    second: Grassland Tileset_12
+  - first:
+      213: -1073003608718490070
+    second: Grassland Tileset_13
+  - first:
+      213: -434035278787350322
+    second: Grassland Tileset_14
+  - first:
+      213: 499195473384676467
+    second: Grassland Tileset_15
+  - first:
+      213: -6283960263391451005
+    second: Grassland Tileset_16
+  - first:
+      213: -3822174216262859315
+    second: Grassland Tileset_17
+  - first:
+      213: -112902478364052669
+    second: Grassland Tileset_18
+  - first:
+      213: 2321112713838229568
+    second: Grassland Tileset_19
+  - first:
+      213: 8863694022414906823
+    second: Grassland Tileset_20
+  - first:
+      213: -1020561683756322390
+    second: Grassland Tileset_21
+  - first:
+      213: 6634492845811839723
+    second: Grassland Tileset_22
+  - first:
+      213: 7955096890556541834
+    second: Grassland Tileset_23
+  - first:
+      213: 6059778404252935923
+    second: Grassland Tileset_24
+  - first:
+      213: -482192732837571829
+    second: Grassland Tileset_25
+  - first:
+      213: 8170089764901342707
+    second: Grassland Tileset_26
+  - first:
+      213: 6956383240086292226
+    second: Grassland Tileset_27
+  - first:
+      213: -6742149354826347030
+    second: Grassland Tileset_28
+  - first:
+      213: 1059857803944256981
+    second: Grassland Tileset_29
+  - first:
+      213: 1425401404875850483
+    second: Grassland Tileset_30
+  - first:
+      213: -1057797956536939886
+    second: Grassland Tileset_31
+  - first:
+      213: 3081916826034899201
+    second: Grassland Tileset_32
+  - first:
+      213: -6822470562649141286
+    second: Grassland Tileset_33
+  - first:
+      213: 3114612160662801851
+    second: Grassland Tileset_34
+  - first:
+      213: 1803686526386346399
+    second: Grassland Tileset_35
+  - first:
+      213: -2509350253406524832
+    second: Grassland Tileset_36
+  - first:
+      213: -150343148848689967
+    second: Grassland Tileset_37
+  - first:
+      213: -7652592522550864808
+    second: Grassland Tileset_38
+  - first:
+      213: 3028871770944034610
+    second: Grassland Tileset_39
+  - first:
+      213: -1466339425151469208
+    second: Grassland Tileset_40
+  - first:
+      213: -4766414320753479726
+    second: Grassland Tileset_41
+  - first:
+      213: 1319461897427970092
+    second: Grassland Tileset_42
+  - first:
+      213: 3971598229350782558
+    second: Grassland Tileset_43
+  - first:
+      213: 2161208100571876048
+    second: Grassland Tileset_44
+  - first:
+      213: 2658347258334813910
+    second: Grassland Tileset_45
+  - first:
+      213: -7294670712648137873
+    second: Grassland Tileset_46
+  - first:
+      213: 2253194779023378785
+    second: Grassland Tileset_47
+  - first:
+      213: -1724496328420973235
+    second: Grassland Tileset_48
+  - first:
+      213: -844783583255255468
+    second: Grassland Tileset_49
+  - first:
+      213: -7334841025985064431
+    second: Grassland Tileset_50
+  - first:
+      213: -7467535338695912547
+    second: Grassland Tileset_51
+  - first:
+      213: 6738738752706732198
+    second: Grassland Tileset_52
+  - first:
+      213: -4399165312721191707
+    second: Grassland Tileset_53
+  - first:
+      213: -8455746199049978659
+    second: Grassland Tileset_54
+  - first:
+      213: -3975198360821649228
+    second: Grassland Tileset_55
+  - first:
+      213: -8625965333183788036
+    second: Grassland Tileset_56
+  - first:
+      213: 6701820185923418351
+    second: Grassland Tileset_57
+  - first:
+      213: -7501784332744293751
+    second: Grassland Tileset_58
+  - first:
+      213: 2554209381176082836
+    second: Grassland Tileset_59
+  - first:
+      213: 4510198015381662079
+    second: Grassland Tileset_60
+  - first:
+      213: 8401655464595094084
+    second: Grassland Tileset_61
+  - first:
+      213: -4090988496129123048
+    second: Grassland Tileset_62
+  - first:
+      213: 3072008535811060458
+    second: Grassland Tileset_63
+  - first:
+      213: 466638454454787542
+    second: Grassland Tileset_64
+  - first:
+      213: -8402414824980772226
+    second: Grassland Tileset_65
+  - first:
+      213: -3104178668329762484
+    second: Grassland Tileset_66
+  - first:
+      213: -4341774526115072726
+    second: Grassland Tileset_67
+  - first:
+      213: -2641595980358149444
+    second: Grassland Tileset_68
+  - first:
+      213: 782542458076292551
+    second: Grassland Tileset_69
+  - first:
+      213: -3181299506692840412
+    second: Grassland Tileset_70
+  - first:
+      213: -9086452544977031643
+    second: Grassland Tileset_71
+  - first:
+      213: 8879974237944726
+    second: Grassland Tileset_72
+  - first:
+      213: 3538892065573914133
+    second: Grassland Tileset_73
+  - first:
+      213: 8764790079649319741
+    second: Grassland Tileset_74
+  - first:
+      213: -4403325815901611038
+    second: Grassland Tileset_75
+  - first:
+      213: 4243001063918245572
+    second: Grassland Tileset_76
+  - first:
+      213: -643964671725353087
+    second: Grassland Tileset_77
+  - first:
+      213: 7573720056515277580
+    second: Grassland Tileset_78
+  - first:
+      213: -2313644824394212646
+    second: Grassland Tileset_79
+  - first:
+      213: -5141589410725785202
+    second: Grassland Tileset_80
+  - first:
+      213: 1328342007369790484
+    second: Grassland Tileset_81
+  - first:
+      213: -5607594863593338844
+    second: Grassland Tileset_82
+  - first:
+      213: 4250510602968391094
+    second: Grassland Tileset_83
+  - first:
+      213: 3437674041177306252
+    second: Grassland Tileset_84
+  - first:
+      213: 7796160561154351108
+    second: Grassland Tileset_85
+  - first:
+      213: -217899831676141765
+    second: Grassland Tileset_86
+  - first:
+      213: 3233759150960736101
+    second: Grassland Tileset_87
+  - first:
+      213: -1209397082038495886
+    second: Grassland Tileset_88
+  - first:
+      213: -621436609672450960
+    second: Grassland Tileset_89
+  - first:
+      213: -5094818518009094743
+    second: Grassland Tileset_90
+  - first:
+      213: -4711313363978208470
+    second: Grassland Tileset_91
+  - first:
+      213: 7224576005080940477
+    second: Grassland Tileset_92
+  - first:
+      213: -8813221668622484809
+    second: Grassland Tileset_93
+  - first:
+      213: -2853166658476268792
+    second: Grassland Tileset_94
+  - first:
+      213: -4880009855766358458
+    second: Grassland Tileset_95
+  - first:
+      213: 7625819124104264607
+    second: Grassland Tileset_96
+  - first:
+      213: -3827599100888906623
+    second: Grassland Tileset_97
+  - first:
+      213: -3261361951210670374
+    second: Grassland Tileset_98
+  - first:
+      213: 6616826506630321484
+    second: Grassland Tileset_99
+  - first:
+      213: 8772570222740538928
+    second: Grassland Tileset_100
+  - first:
+      213: 1445249503636408168
+    second: Grassland Tileset_101
+  - first:
+      213: -339944892330674052
+    second: Grassland Tileset_102
+  - first:
+      213: 5642118223926222719
+    second: Grassland Tileset_103
+  - first:
+      213: -6137721601822802665
+    second: Grassland Tileset_104
+  - first:
+      213: -7415168422304941588
+    second: Grassland Tileset_105
+  - first:
+      213: 8876958313108009510
+    second: Grassland Tileset_106
+  - first:
+      213: -1616951613001371455
+    second: Grassland Tileset_107
+  - first:
+      213: 1575414582641984672
+    second: Grassland Tileset_108
+  - first:
+      213: 3128714425648971393
+    second: Grassland Tileset_109
+  - first:
+      213: 8375509340658512726
+    second: Grassland Tileset_110
+  - first:
+      213: 8840257166550019421
+    second: Grassland Tileset_111
+  - first:
+      213: 721163236154241203
+    second: Grassland Tileset_112
+  - first:
+      213: -7646810547460725762
+    second: Grassland Tileset_113
+  - first:
+      213: -1502030598350425515
+    second: Grassland Tileset_114
+  - first:
+      213: 4617144178507209439
+    second: Grassland Tileset_115
+  - first:
+      213: 8009103758232528594
+    second: Grassland Tileset_116
+  - first:
+      213: 3926730770287104087
+    second: Grassland Tileset_117
+  - first:
+      213: 2298384028525418210
+    second: Grassland Tileset_118
+  - first:
+      213: 1557818438178237175
+    second: Grassland Tileset_119
+  - first:
+      213: -6533485787769360045
+    second: Grassland Tileset_120
+  - first:
+      213: 1927134454216355797
+    second: Grassland Tileset_121
+  - first:
+      213: 2301324828332752131
+    second: Grassland Tileset_122
+  - first:
+      213: -2207147812834733046
+    second: Grassland Tileset_123
+  - first:
+      213: 4695610379487801771
+    second: Grassland Tileset_124
+  - first:
+      213: 93323223100286974
+    second: Grassland Tileset_125
+  - first:
+      213: 1503068308961296308
+    second: Grassland Tileset_126
+  - first:
+      213: -7202572577423260077
+    second: Grassland Tileset_127
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grassland Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 433
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d30e4ed7ffddfc0800000000000000
+      internalID: -3468335221829518024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 433
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358bd34df3c52b3d0800000000000000
+      internalID: -3192387756638750637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 433
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bde3da8527000cf0800000000000000
+      internalID: -288222518327382603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 433
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336c8b4f37be4ac20800000000000000
+      internalID: 3216954917108893235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 433
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7050788f04b36610800000000000000
+      internalID: 1613331070335340668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 433
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54b60e7d6c587010800000000000000
+      internalID: 1186800127147684954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf42a37bf0d163e00800000000000000
+      internalID: 1024037918609122555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 338
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de403fd47abe4f540800000000000000
+      internalID: 5040912986734265581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 338
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03701326f29beb680800000000000000
+      internalID: -8737342613890201808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 338
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88eec102d93fc2890800000000000000
+      internalID: -7481337024795054456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 338
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf951b54274db1de0800000000000000
+      internalID: -1361260875088832005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 338
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97bfa7e6fef1c9ec0800000000000000
+      internalID: -3558934492318336135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb2c67a9b2efdb70800000000000000
+      internalID: 8926102273477323702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 243
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a264f9327eceb11f0800000000000000
+      internalID: -1073003608718490070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 243
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec074eba63ff9f9f0800000000000000
+      internalID: -434035278787350322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 243
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c939063af7de600800000000000000
+      internalID: 499195473384676467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 243
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388e1ed2f63eac8a0800000000000000
+      internalID: -6283960263391451005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 243
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5cef11dc8e4fac0800000000000000
+      internalID: -3822174216262859315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34379da4bc3ee6ef0800000000000000
+      internalID: -112902478364052669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 148
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04878f727bf363020800000000000000
+      internalID: 2321112713838229568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 148
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c53bc360ca220b70800000000000000
+      internalID: 8863694022414906823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 148
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa174584e8c36d1f0800000000000000
+      internalID: -1020561683756322390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 148
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be23c7b9714721c50800000000000000
+      internalID: 6634492845811839723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 148
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bef6b597e266e60800000000000000
+      internalID: 7955096890556541834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f664134a58a81450800000000000000
+      internalID: 6059778404252935923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 53
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0311f5a348ee49f0800000000000000
+      internalID: -482192732837571829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 53
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdcffbaa5df16170800000000000000
+      internalID: 8170089764901342707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 53
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20703da43b90a8060800000000000000
+      internalID: 6956383240086292226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 53
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed42fa12e21f62a0800000000000000
+      internalID: -6742149354826347030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 53
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5e58cae0f55be00800000000000000
+      internalID: 1059857803944256981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b076c8972d1384e46b7b6b6ab7e66b1a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":73.0,"y":95.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Grassland Tileset_0: -3468335221829518024
+      Grassland Tileset_1: -3192387756638750637
+      Grassland Tileset_10: -1361260875088832005
+      Grassland Tileset_11: -3558934492318336135
+      Grassland Tileset_12: 8926102273477323702
+      Grassland Tileset_13: -1073003608718490070
+      Grassland Tileset_14: -434035278787350322
+      Grassland Tileset_15: 499195473384676467
+      Grassland Tileset_16: -6283960263391451005
+      Grassland Tileset_17: -3822174216262859315
+      Grassland Tileset_18: -112902478364052669
+      Grassland Tileset_19: 2321112713838229568
+      Grassland Tileset_2: -288222518327382603
+      Grassland Tileset_20: 8863694022414906823
+      Grassland Tileset_21: -1020561683756322390
+      Grassland Tileset_22: 6634492845811839723
+      Grassland Tileset_23: 7955096890556541834
+      Grassland Tileset_24: 6059778404252935923
+      Grassland Tileset_25: -482192732837571829
+      Grassland Tileset_26: 8170089764901342707
+      Grassland Tileset_27: 6956383240086292226
+      Grassland Tileset_28: -6742149354826347030
+      Grassland Tileset_29: 1059857803944256981
+      Grassland Tileset_3: 3216954917108893235
+      Grassland Tileset_4: 1613331070335340668
+      Grassland Tileset_5: 1186800127147684954
+      Grassland Tileset_6: 1024037918609122555
+      Grassland Tileset_7: 5040912986734265581
+      Grassland Tileset_8: -8737342613890201808
+      Grassland Tileset_9: -7481337024795054456
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
