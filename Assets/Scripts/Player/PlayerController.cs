@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     public PlayerDashState dashState {get; private set;}
     // Dash State
 
+
     void Awake(){
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

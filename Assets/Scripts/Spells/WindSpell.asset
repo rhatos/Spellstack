@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18979a71fcbe02ab8445db47483efad, type: 3}
+  m_Name: WindSpell
+  m_EditorClassIdentifier: Assembly-CSharp::WindBlastSO
+  spellName: Windblast Spell
+  projectilePrefab: {fileID: 1280763381249394419, guid: 0aaff9582ca4a9b2f8236c66a4adc5df, type: 3}
+  manaCost: 0
+  icon: {fileID: -5567054049065543188, guid: 0a29500197db7a87e975cf2e5a0a7421, type: 3}
+  speed: 30
+  id: 3
+  direction: {x: 3.9915307, y: 0.33915234}
