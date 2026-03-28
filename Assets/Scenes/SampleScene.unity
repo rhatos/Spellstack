@@ -1368,6 +1368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   player: {fileID: 5217373288333724854}
   health: 25
+  defaultMat: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  damageMat: {fileID: 2100000, guid: ad1ec7798dab8e905bd40a5764a32949, type: 2}
 --- !u!1 &604534456
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,7 +2901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 65b85f466bca88f8f92cfb9509941739, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
