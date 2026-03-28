@@ -21,6 +21,9 @@ public class EnemyAI : MonoBehaviour
     private bool knockedBack = false;
     private float knockBackStart = 0f;
 
+    public Material defaultMat;
+    public Material damageMat;
+
     void Start()
     {
         this.sprite = GetComponent<SpriteRenderer>();
@@ -35,6 +38,8 @@ public class EnemyAI : MonoBehaviour
             if(Time.time - knockBackStart > 0.2){
                 rb.linearVelocity = new Vector2(0,0);
                 knockedBack = false;
+                anim.speed = 1;
+                this.sprite.material = defaultMat;
             }
         }
         
@@ -43,7 +48,7 @@ public class EnemyAI : MonoBehaviour
             Behaviour();
             anim.SetBool("isMoving", true);
 
-        } else if(canShoot){
+        } else if(canShoot && !knockedBack){
 
             anim.SetBool("isMoving", false);
             anim.SetBool("isShooting", true);
@@ -61,6 +66,8 @@ public class EnemyAI : MonoBehaviour
         knockedBack = true;
         knockBackStart = Time.time;
         rb.linearVelocity = direction.normalized * strength;
+        anim.speed = 0;
+        this.sprite.material = damageMat;
     }
 
     // Shoot on the y
