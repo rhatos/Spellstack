@@ -14,12 +14,13 @@ public class Room
     // 1 = south
     // 2 = east
     // 3 = west
-    Room[] adjacentRooms = new Room[4];
+    public Room[] adjacentRooms = new Room[4];
     public GameObject roomPrefab;
 
     // Active list of entities
     List<Entity> entities = new List<Entity>();
 
+    public int roomPrefabNumber = 0;
 
     public void initRoom(){
 

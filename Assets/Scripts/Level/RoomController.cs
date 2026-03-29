@@ -13,7 +13,7 @@ public class RoomController : MonoBehaviour
         enterSouthRoomTrigger.EnteredTrigger += OnEnterRoomSouthTrigger;
         enterSouthRoomTrigger.ExitedTrigger += OnExitRoomSouthTrigger;
         enterNorthRoomTrigger.EnteredTrigger += OnEnterRoomNorthTrigger;
-        enterNorthRoomTrigger.EnteredTrigger += OnEnterRoomNorthTrigger;
+        enterNorthRoomTrigger.ExitedTrigger += OnExitRoomNorthTrigger;
     }
 
     void OnEnterRoomSouthTrigger(Collider2D other){
@@ -41,7 +41,7 @@ public class RoomController : MonoBehaviour
         if(other.CompareTag("Player")){
 
             // Prompt level controller to change rooms
-            Debug.Log("Entered a south room trigger");
+            Debug.Log("Entered a north room trigger");
 
             levelController.switchRoom(0);
         }
@@ -52,7 +52,8 @@ public class RoomController : MonoBehaviour
         if(other.CompareTag("Player")){
 
             // Prompt level controller that we have left the trigger and it can be triggered again.
-            Debug.Log("Exited a south room trigger");
+            Debug.Log("Exited a north room trigger");
+            levelController.canSwitchRooms = true;
         }
     }
 

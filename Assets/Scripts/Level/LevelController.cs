@@ -16,14 +16,33 @@ public class LevelController : MonoBehaviour
 
     public PlayerController player;
 
-    bool canSwitchRooms = true;
+    public bool canSwitchRooms = true;
+
+    // DEBUG
+    Room startRoom = new Room();
+    Room differentRoom = new Room();
+    //
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        initStartingRoom();
+        setupDebugRoom();
+        initRooms();
         roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
+        currentRoom.enterRoom();
         
+    }
+
+    void setupDebugRoom(){
+
+        // Room connections
+        startRoom.adjacentRooms[1] = differentRoom;
+        differentRoom.adjacentRooms[0] = startRoom;
+        differentRoom.roomPrefabNumber = 1;
+
+        addRoom(startRoom);
+        addRoom(differentRoom);
+
     }
 
     // Level generator calls this
@@ -36,16 +55,6 @@ public class LevelController : MonoBehaviour
     // Just for testing
     void initStartingRoom(){
 
-        Room testRoom = new Room();
-
-        this.currentRoom = testRoom;
-        Vector3 position = new Vector3(0,0,1);
-        GameObject roomPrefab = Instantiate(roomPrefabs[0],position,this.transform.rotation);
-        roomPrefab.GetComponent<RoomController>().levelController = this;
-
-        testRoom.roomPrefab = roomPrefab;
-
-        currentRoom.initRoom();
         currentRoom.enterRoom();
     }
 
@@ -54,27 +63,34 @@ public class LevelController : MonoBehaviour
 
         foreach(Room r in rooms){
             Vector3 position = new Vector3(0,0,1);
-            GameObject roomPrefab = Instantiate(roomPrefabs[0],position,this.transform.rotation); // note roomPrefabs[0] needs to change
+            GameObject roomPrefab = Instantiate(roomPrefabs[r.roomPrefabNumber],position,this.transform.rotation); // note roomPrefabs[0] needs to change
             r.roomPrefab = roomPrefab;
+            r.roomPrefab.GetComponent<RoomController>().levelController = this;
             r.initRoom();
 
         }
+
+        currentRoom = rooms[0];
     }
 
     // Update is called once per frame
     void Update()
     {
-       currentRoom.Update(); 
+       // currentRoom.Update(); 
     }
 
     // Must be called by the RoomController
     public void switchRoom(int direction){
 
         if(canSwitchRooms){
-            // currentRoom = currentRoom.exitRoom(direction);
-            // roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
-            // roomController.levelController = this;
-            // currentRoom.enterRoom();
+            // canSwitchRooms = false;
+            Debug.Log("DIRECTION: " + direction);
+            currentRoom = currentRoom.exitRoom(direction);
+            Debug.Log("EXITING IN DIRECTION: " + direction);
+            roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
+            Debug.Log("SETTING ROOM CONTROLLER " + direction);
+            roomController.levelController = this;
+            currentRoom.enterRoom();
             
             // I.e: MOVING DOWN
             if(direction == 1){
