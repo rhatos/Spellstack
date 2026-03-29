@@ -16,13 +16,11 @@ public class LevelController : MonoBehaviour
 
     public PlayerController player;
 
+    bool canSwitchRooms = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Initialise all rooms after level generation
-        // And set currentRoom
-        // Instantiate as well, with scale set to 1.3
-        // Also set levelcontroller to this
         initStartingRoom();
         roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
         
@@ -43,6 +41,7 @@ public class LevelController : MonoBehaviour
         this.currentRoom = testRoom;
         Vector3 position = new Vector3(0,0,1);
         GameObject roomPrefab = Instantiate(roomPrefabs[0],position,this.transform.rotation);
+        roomPrefab.GetComponent<RoomController>().levelController = this;
 
         testRoom.roomPrefab = roomPrefab;
 
@@ -68,9 +67,31 @@ public class LevelController : MonoBehaviour
        currentRoom.Update(); 
     }
 
+    // Must be called by the RoomController
     public void switchRoom(int direction){
 
-        currentRoom.exitRoom(direction);
+        if(canSwitchRooms){
+            // currentRoom = currentRoom.exitRoom(direction);
+            // roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
+            // roomController.levelController = this;
+            // currentRoom.enterRoom();
+            
+            // I.e: MOVING DOWN
+            if(direction == 1){
+                // Then should be teleported to the NORTH entrance of the new room
+                // ... room
+                player.transform.position = roomController.enterNorthRoomTrigger.spawnPoint.transform.position;
 
+            }
+
+            if(direction == 0){
+                player.transform.position = roomController.enterSouthRoomTrigger.spawnPoint.transform.position;
+            }
+        }
+
+    }
+
+    public void leftTrigger(){
+        canSwitchRooms = true;
     }
 }

@@ -1495,7 +1495,7 @@ MonoBehaviour:
   roomController: {fileID: 0}
   roomPrefabs:
   - {fileID: 8726960784172972078, guid: 24bb5f509b1b941459487f9c5b1f8908, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 5217373288333724854}
 --- !u!4 &653712801
 Transform:
   m_ObjectHideFlags: 0
@@ -3227,9 +3227,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.00069444446
     width: 1
-    height: 1
+    height: 0.99921936
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -4168,37 +4168,6 @@ Transform:
   - {fileID: 5227845026185701604}
   m_Father: {fileID: 4949352215099571858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &3948796089916611861
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4018619858283871537}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4949352215099571858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4018619858283871537
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3948796089916611861}
-  m_Layer: 0
-  m_Name: Configuration
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &4381180128008532358
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,7 +4198,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3948796089916611861}
   - {fileID: 2816264564536996944}
   - {fileID: 1244025914}
   - {fileID: 702265027}
@@ -4352,7 +4320,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -4459,8 +4427,8 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &8174732171199193118
-BoxCollider2D:
+--- !u!58 &8174732171199193118
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4475,7 +4443,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -4493,18 +4461,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.059058666, y: -0.23302573}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 2.5}
-    newSize: {x: 2.5, y: 2.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.98722553, y: 2.0339484}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.028803706, y: -0.4896593}
+  m_Radius: 0.6574714
 --- !u!1 &8351931328662978046
 GameObject:
   m_ObjectHideFlags: 0

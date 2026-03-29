@@ -36,14 +36,15 @@ public class Room
         roomPrefab.SetActive(true);
     }
 
-    public void exitRoom(int moveIntoRoom){
+    public Room exitRoom(int moveIntoRoom){
 
         foreach(Entity e in entities){
             e.getObject().SetActive(false);
         }
 
         roomPrefab.SetActive(false);
-        adjacentRooms[moveIntoRoom].roomPrefab.SetActive(true);
+
+        return adjacentRooms[moveIntoRoom];
     }
 
     // Update is called once per frame
