@@ -49,7 +49,7 @@ public class Room
     }
 
     public void determinePrefabNumber(){
-        // i.e: all 4 directions, so 16 different directions
+        // i.e: all 4 directions, so 15 different directions
 
         bool up = false;
         bool down = false;

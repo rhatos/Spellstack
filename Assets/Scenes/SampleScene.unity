@@ -1496,6 +1496,11 @@ MonoBehaviour:
   roomPrefabs:
   - {fileID: 8726960784172972078, guid: 24bb5f509b1b941459487f9c5b1f8908, type: 3}
   - {fileID: 1654121910562762093, guid: f89670d88aa73d249ac08d66cb0967f6, type: 3}
+  - {fileID: 1654121910562762093, guid: b4641ce1f733260babdf9171908c3a12, type: 3}
+  - {fileID: 5849874452416994336, guid: d62061c1cc6e01b4c9a22a4eb535880f, type: 3}
+  - {fileID: 4119229592378472754, guid: 675fd40fb8186d84cb101a236d8bc218, type: 3}
+  - {fileID: 934344074925976921, guid: e6d2156bcd424404a97965cd9ab2029b, type: 3}
+  - {fileID: 934344074925976921, guid: 5bc3eadad6a7a841394901c5bdcbfac7, type: 3}
   player: {fileID: 5217373288333724854}
   canSwitchRooms: 1
 --- !u!4 &653712801
@@ -3339,7 +3344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1838713048
 Transform:
   m_ObjectHideFlags: 0
@@ -3362,7 +3367,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838713047}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4c5e61627f43c092aa5811bba5ece9a, type: 3}
   m_Name: 
@@ -4220,7 +4225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateText: {fileID: 1589264133}
-  moveSpeed: 15
+  moveSpeed: 12
   canDash: 1
   dashSpeed: 20
   dashTime: 0.25
