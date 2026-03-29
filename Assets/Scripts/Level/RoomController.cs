@@ -8,12 +8,30 @@ public class RoomController : MonoBehaviour
     // Entrance triggers
     public RoomTrigger enterSouthRoomTrigger;
     public RoomTrigger enterNorthRoomTrigger;
+    public RoomTrigger enterEastRoomTrigger;
+    public RoomTrigger enterWestRoomTrigger;
 
     void Awake(){
-        enterSouthRoomTrigger.EnteredTrigger += OnEnterRoomSouthTrigger;
-        enterSouthRoomTrigger.ExitedTrigger += OnExitRoomSouthTrigger;
+
+        if(enterSouthRoomTrigger != null){
+            enterSouthRoomTrigger.EnteredTrigger += OnEnterRoomSouthTrigger;
+            enterSouthRoomTrigger.ExitedTrigger += OnExitRoomSouthTrigger;
+        }
+
+        if(enterNorthRoomTrigger != null){
         enterNorthRoomTrigger.EnteredTrigger += OnEnterRoomNorthTrigger;
         enterNorthRoomTrigger.ExitedTrigger += OnExitRoomNorthTrigger;
+        }
+
+        if(enterEastRoomTrigger != null){
+        enterEastRoomTrigger.EnteredTrigger += OnEnterRoomEastTrigger;
+        enterEastRoomTrigger.ExitedTrigger += OnExitRoomEastTrigger;
+        }
+
+        if(enterWestRoomTrigger != null){
+        enterWestRoomTrigger.EnteredTrigger += OnEnterRoomWestTrigger;
+        enterWestRoomTrigger.ExitedTrigger += OnExitRoomWestTrigger;
+        }
     }
 
     void OnEnterRoomSouthTrigger(Collider2D other){
@@ -35,6 +53,48 @@ public class RoomController : MonoBehaviour
             Debug.Log("Exited a south room trigger");
         }
     }
+
+    void OnEnterRoomEastTrigger(Collider2D other){
+
+        if(other.CompareTag("Player")){
+
+            // Prompt level controller to change rooms
+            Debug.Log("Entered a east room trigger");
+
+            levelController.switchRoom(2);
+        }
+    }
+
+    void OnExitRoomEastTrigger(Collider2D other){
+
+        if(other.CompareTag("Player")){
+
+            // Prompt level controller that we have left the trigger and it can be triggered again.
+            Debug.Log("Exited a east room trigger");
+            levelController.canSwitchRooms = true;
+        }
+    }
+    void OnEnterRoomWestTrigger(Collider2D other){
+
+        if(other.CompareTag("Player")){
+
+            // Prompt level controller to change rooms
+            Debug.Log("Entered a west room trigger");
+
+            levelController.switchRoom(3);
+        }
+    }
+
+    void OnExitRoomWestTrigger(Collider2D other){
+
+        if(other.CompareTag("Player")){
+
+            // Prompt level controller that we have left the trigger and it can be triggered again.
+            Debug.Log("Exited a west room trigger");
+            levelController.canSwitchRooms = true;
+        }
+    }
+
 
     void OnEnterRoomNorthTrigger(Collider2D other){
 

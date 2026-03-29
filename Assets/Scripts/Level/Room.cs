@@ -48,6 +48,43 @@ public class Room
         return adjacentRooms[moveIntoRoom];
     }
 
+    public void determinePrefabNumber(){
+        // i.e: all 4 directions, so 16 different directions
+
+        bool up = false;
+        bool down = false;
+        bool right = false;
+        bool left = false;
+
+        if(adjacentRooms[0] != null) up = true;
+        if(adjacentRooms[1] != null) down = true;
+        if(adjacentRooms[2] != null) right = true;
+        if(adjacentRooms[3] != null) left = true;
+  
+        // 1 Entrance (4)
+        if (up && !down && !left && !right) { } // only up
+        if (!up && down && !left && !right) { } // only down
+        if (!up && !down && left && !right) { } // only left
+        if (!up && !down && !left && right) { } // only right
+
+        // 2 Entrances (6)
+        if (up && down && !left && !right) {roomPrefabNumber = 0;} // vertical
+        if (up && !down && left && !right) {roomPrefabNumber = 2;} // L with up and left
+        if (up && !down && !left && right) {roomPrefabNumber = 1;} // L with up and right
+        if (!up && down && left && !right) {roomPrefabNumber = 4;} // L with down and left
+        if (!up && down && !left && right) { } // L shape with down and right
+        if (!up && !down && left && right) {roomPrefabNumber=Random.Range(5,7);} // left and right there are 2 prefabs for this
+
+        // 3 Entrances (4)
+        if (up && down && left && !right) { } // Up, Down and Left only
+        if (up && down && !left && right) { } // Up, Down and Right only
+        if (up && !down && left && right) { } // Up, Left and Right only
+        if (!up && down && left && right) { } // Down, Left and Right only
+
+        // 4 Entrances (1)
+        if (up && down && left && right) {roomPrefabNumber=3;} // 4 directions
+    }
+
     // Update is called once per frame
     public void Update()
     {

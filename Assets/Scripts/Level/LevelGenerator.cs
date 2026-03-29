@@ -11,7 +11,7 @@ public class LevelGenerator : MonoBehaviour
     public int minRooms = 10;
     public int maxRooms = 20;
 
-    private int[] roomLayout;
+    public int[] roomLayout;
     private int roomCount;
     private List<int> endRooms;
 
@@ -20,6 +20,8 @@ public class LevelGenerator : MonoBehaviour
     private Queue<int> cellQueue;
 
     private List<RoomCell> spawnedRoomCells;
+
+    public LevelController levelController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,6 +53,33 @@ public class LevelGenerator : MonoBehaviour
 
     }
 
+    void setupRooms(){
+
+        // First pass
+        int num = 0;
+        foreach(int i in roomLayout){
+
+            if(i > 0){
+                Room r = new Room();
+                levelController.addRoom(r, num);
+            }
+            num++;
+        }
+
+        // Now adjacent rooms
+        num = 0;
+        foreach(Room r in levelController.rooms){
+            if(r != null){
+               if(levelController.rooms[num+1] != null) r.adjacentRooms[2] = levelController.rooms[num+1]; 
+               if(levelController.rooms[num-1] != null) r.adjacentRooms[3] = levelController.rooms[num-1];
+               if(levelController.rooms[num+10] != null) r.adjacentRooms[1] = levelController.rooms[num+10]; 
+               if(levelController.rooms[num-10] != null) r.adjacentRooms[0] = levelController.rooms[num-10]; 
+            }
+            num++;
+        }
+
+    }
+
     void GenerateLevel(){
 
         while(cellQueue.Count > 0){
@@ -72,6 +101,14 @@ public class LevelGenerator : MonoBehaviour
         if(roomCount < minRooms){
             SetupLevel();
             return;
+        }
+
+        int i = 0;
+        foreach(int c in roomLayout){
+
+            if(c > 0) Debug.Log(i + ": " + c);
+
+            i++;
         }
 
     }

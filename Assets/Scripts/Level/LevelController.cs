@@ -11,7 +11,8 @@ public class LevelController : MonoBehaviour
     public Room currentRoom;
     public RoomController roomController; // initally null, but based on current room
 
-    List<Room> rooms = new List<Room>();
+    public Room[] rooms = new Room[100];
+
     public List<GameObject> roomPrefabs = new List<GameObject>();
 
     public PlayerController player;
@@ -21,6 +22,7 @@ public class LevelController : MonoBehaviour
     // DEBUG
     Room startRoom = new Room();
     Room differentRoom = new Room();
+    Room differentRoomAgain = new Room();
     //
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,19 +39,25 @@ public class LevelController : MonoBehaviour
 
         // Room connections
         startRoom.adjacentRooms[1] = differentRoom;
+        startRoom.roomPrefabNumber = 0;
+
         differentRoom.adjacentRooms[0] = startRoom;
+        differentRoom.adjacentRooms[2] = differentRoomAgain;
+
         differentRoom.roomPrefabNumber = 1;
 
-        addRoom(startRoom);
-        addRoom(differentRoom);
+        differentRoomAgain.adjacentRooms[3] = differentRoom;
+
+        differentRoomAgain.roomPrefabNumber = 5;
+
+        addRoom(startRoom,45);
+        addRoom(differentRoom,55);
+        addRoom(differentRoomAgain,56);
 
     }
 
-    // Level generator calls this
-    public void addRoom(Room room){
-
-        rooms.Add(room);
-
+    public void addRoom(Room room, int position){
+        rooms[position] = room;
     }
 
     // Just for testing
@@ -62,15 +70,24 @@ public class LevelController : MonoBehaviour
     public void initRooms(){
 
         foreach(Room r in rooms){
-            Vector3 position = new Vector3(0,0,1);
-            GameObject roomPrefab = Instantiate(roomPrefabs[r.roomPrefabNumber],position,this.transform.rotation); // note roomPrefabs[0] needs to change
-            r.roomPrefab = roomPrefab;
-            r.roomPrefab.GetComponent<RoomController>().levelController = this;
-            r.initRoom();
 
+            if(r != null){
+                Vector3 position = new Vector3(0,0,1);
+
+                // Determine prefab number
+
+                GameObject roomPrefab = Instantiate(roomPrefabs[r.roomPrefabNumber],position,this.transform.rotation); // note roomPrefabs[0] needs to change
+                r.roomPrefab = roomPrefab;
+                r.roomPrefab.GetComponent<RoomController>().levelController = this;
+                r.initRoom();
+
+
+            }
         }
 
-        currentRoom = rooms[0];
+
+        // Starting room
+        currentRoom = rooms[45];
     }
 
     // Update is called once per frame
@@ -83,25 +100,26 @@ public class LevelController : MonoBehaviour
     public void switchRoom(int direction){
 
         if(canSwitchRooms){
-            // canSwitchRooms = false;
-            Debug.Log("DIRECTION: " + direction);
             currentRoom = currentRoom.exitRoom(direction);
-            Debug.Log("EXITING IN DIRECTION: " + direction);
             roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
-            Debug.Log("SETTING ROOM CONTROLLER " + direction);
             roomController.levelController = this;
             currentRoom.enterRoom();
             
             // I.e: MOVING DOWN
             if(direction == 1){
-                // Then should be teleported to the NORTH entrance of the new room
-                // ... room
-                player.transform.position = roomController.enterNorthRoomTrigger.spawnPoint.transform.position;
-
+                if(roomController.enterNorthRoomTrigger != null) player.transform.position = roomController.enterNorthRoomTrigger.spawnPoint.transform.position;
             }
 
             if(direction == 0){
-                player.transform.position = roomController.enterSouthRoomTrigger.spawnPoint.transform.position;
+                if(roomController.enterSouthRoomTrigger != null) player.transform.position = roomController.enterSouthRoomTrigger.spawnPoint.transform.position;
+            }
+
+            if(direction == 2){
+                if(roomController.enterWestRoomTrigger != null) player.transform.position = roomController.enterWestRoomTrigger.spawnPoint.transform.position;
+            }
+
+            if(direction == 3){
+                if(roomController.enterEastRoomTrigger != null) player.transform.position = roomController.enterEastRoomTrigger.spawnPoint.transform.position;
             }
         }
 

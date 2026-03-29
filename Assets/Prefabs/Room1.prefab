@@ -6882,7 +6882,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.84375, y: 0.90625, z: 0}
@@ -8176,7 +8176,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 2.265625, y: 2.65625, z: 0}
@@ -8663,6 +8663,8 @@ MonoBehaviour:
   levelController: {fileID: 0}
   enterSouthRoomTrigger: {fileID: 9197239794730445856}
   enterNorthRoomTrigger: {fileID: 2290446089528682615}
+  enterEastRoomTrigger: {fileID: 0}
+  enterWestRoomTrigger: {fileID: 0}
 --- !u!61 &2604797466451281513
 BoxCollider2D:
   m_ObjectHideFlags: 0
