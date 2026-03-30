@@ -62,23 +62,23 @@ public class Room
         if(adjacentRooms[3] != null) left = true;
   
         // 1 Entrance (4)
-        if (up && !down && !left && !right) { } // only up
-        if (!up && down && !left && !right) { } // only down
-        if (!up && !down && left && !right) { } // only left
-        if (!up && !down && !left && right) { } // only right
+        if (up && !down && !left && !right) {roomPrefabNumber=8;} // only up
+        if (!up && down && !left && !right) {roomPrefabNumber=7;} // only down
+        if (!up && !down && left && !right) {roomPrefabNumber=9;} // only left
+        if (!up && !down && !left && right) {roomPrefabNumber=10;} // only right
 
         // 2 Entrances (6)
         if (up && down && !left && !right) {roomPrefabNumber = 0;} // vertical
         if (up && !down && left && !right) {roomPrefabNumber = 2;} // L with up and left
         if (up && !down && !left && right) {roomPrefabNumber = 1;} // L with up and right
         if (!up && down && left && !right) {roomPrefabNumber = 4;} // L with down and left
-        if (!up && down && !left && right) { } // L shape with down and right
+        if (!up && down && !left && right) {roomPrefabNumber=11;} // L shape with down and right
         if (!up && !down && left && right) {roomPrefabNumber=Random.Range(5,7);} // left and right there are 2 prefabs for this
 
         // 3 Entrances (4)
-        if (up && down && left && !right) { } // Up, Down and Left only
+        if (up && down && left && !right) {roomPrefabNumber=13;} // Up, Down and Left only
         if (up && down && !left && right) { } // Up, Down and Right only
-        if (up && !down && left && right) { } // Up, Left and Right only
+        if (up && !down && left && right) {roomPrefabNumber=12;} // Up, Left and Right only
         if (!up && down && left && right) { } // Down, Left and Right only
 
         // 4 Entrances (1)

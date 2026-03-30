@@ -39,16 +39,16 @@ public class LevelController : MonoBehaviour
 
         // Room connections
         startRoom.adjacentRooms[1] = differentRoom;
-        startRoom.roomPrefabNumber = 3;
+        startRoom.determinePrefabNumber();
 
         differentRoom.adjacentRooms[0] = startRoom;
-        differentRoom.adjacentRooms[2] = differentRoomAgain;
+        differentRoom.adjacentRooms[1] = differentRoomAgain;
 
-        differentRoom.roomPrefabNumber = 1;
+        differentRoom.determinePrefabNumber();
 
-        differentRoomAgain.adjacentRooms[3] = differentRoom;
 
-        differentRoomAgain.roomPrefabNumber = 5;
+        differentRoomAgain.adjacentRooms[0] = differentRoom;
+        differentRoomAgain.roomPrefabNumber = 1;
 
         addRoom(startRoom,45);
         addRoom(differentRoom,55);
