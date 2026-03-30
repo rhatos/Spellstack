@@ -34,7 +34,7 @@ public class PlayerMoveState : PlayerState {
 
         // up = 0,1 down = 0,-1, right = 1,0, left = -1,0
 
-        Debug.Log(player.MoveInput);
+        // Debug.Log(player.MoveInput);
 
         // If we're not pressing anything
         // Switch to idle state.
