@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Grassland Tileset_1
+  m_Name: Sprite_Tiles_BottleGreenGrass_darker (1)_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -3192387756638750637, guid: 890b06e515996ea479e185b3583d80fb, type: 3}
+  m_Sprite: {fileID: 1219467015214735300, guid: 65166459663bbd5409b0f64c1e765aaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
