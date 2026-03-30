@@ -25,6 +25,8 @@ public class LevelController : MonoBehaviour
     Room differentRoomAgain = new Room();
     //
 
+    public Minimap miniMap;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -89,6 +91,7 @@ public class LevelController : MonoBehaviour
 
         // Starting room
         currentRoom = rooms[45];
+        miniMap.visitCell(45);
         roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
         currentRoom.enterRoom();
     }
@@ -107,6 +110,7 @@ public class LevelController : MonoBehaviour
             roomController = currentRoom.roomPrefab.GetComponent<RoomController>();
             roomController.levelController = this;
             currentRoom.enterRoom();
+            miniMap.visitCell(currentRoom.index);
             
             // I.e: MOVING DOWN
             if(direction == 1){

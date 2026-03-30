@@ -7,6 +7,7 @@ public class Room
     // Grid of entities
     public int gridWidth = 10;
     public int gridHeight = 10;
+    public int index = 0;
     int[,] grid;
 
     // Adjacent Rooms
