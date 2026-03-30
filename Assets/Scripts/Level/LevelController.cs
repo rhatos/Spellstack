@@ -39,7 +39,9 @@ public class LevelController : MonoBehaviour
 
         // Room connections
         startRoom.adjacentRooms[1] = differentRoom;
-        startRoom.determinePrefabNumber();
+
+        // Change this to test collisions @joshua
+        startRoom.roomPrefabNumber = 0;
 
         differentRoom.adjacentRooms[0] = startRoom;
         differentRoom.adjacentRooms[1] = differentRoomAgain;
