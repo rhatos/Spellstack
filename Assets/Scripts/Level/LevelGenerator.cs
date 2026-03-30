@@ -30,6 +30,7 @@ public class LevelGenerator : MonoBehaviour
         spawnedRoomCells = new();
 
         SetupLevel();
+        setupRooms();
         
     }
 
@@ -77,6 +78,8 @@ public class LevelGenerator : MonoBehaviour
             }
             num++;
         }
+
+        levelController.initRooms();
 
     }
 

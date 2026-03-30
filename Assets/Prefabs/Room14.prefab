@@ -7566,6 +7566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3774342859858388366}
+  - component: {fileID: 1937712865797357048}
   m_Layer: 0
   m_Name: Room14
   m_TagString: Untagged
@@ -7593,6 +7594,23 @@ Transform:
   - {fileID: 6584812359832233283}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1937712865797357048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7376240028950040787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2fbd83d47408f148584d997453b9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomController
+  levelController: {fileID: 0}
+  enterSouthRoomTrigger: {fileID: 92628415026177722}
+  enterNorthRoomTrigger: {fileID: 1311578973129021770}
+  enterEastRoomTrigger: {fileID: 0}
+  enterWestRoomTrigger: {fileID: 4952770142198506955}
 --- !u!1 &8179348577256066645
 GameObject:
   m_ObjectHideFlags: 0
@@ -7605,7 +7623,7 @@ GameObject:
   - component: {fileID: 5638353232030537872}
   - component: {fileID: 92628415026177722}
   m_Layer: 0
-  m_Name: PlayerSpawnEast
+  m_Name: PlayerSpawnSouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

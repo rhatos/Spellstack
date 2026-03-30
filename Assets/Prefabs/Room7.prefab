@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomController
   levelController: {fileID: 0}
-  enterSouthRoomTrigger: {fileID: 3242235029736515400}
-  enterNorthRoomTrigger: {fileID: 3242235029736515400}
+  enterSouthRoomTrigger: {fileID: 0}
+  enterNorthRoomTrigger: {fileID: 0}
   enterEastRoomTrigger: {fileID: 3242235029736515400}
   enterWestRoomTrigger: {fileID: 96803555169278177}
 --- !u!1 &3353086069925023357
