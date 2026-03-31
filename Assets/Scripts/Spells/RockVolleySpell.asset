@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f179a7aea0ad11bea260a202b50ebc7, type: 3}
   m_Name: RockVolleySpell
   m_EditorClassIdentifier: Assembly-CSharp::RockVolleySO
-  spellName: 
+  spellName: Rock Volley
   projectilePrefab: {fileID: 1280763381249394419, guid: ce0b86903dc925c549c683e4f5465362, type: 3}
   manaCost: 0
   icon: {fileID: 0}

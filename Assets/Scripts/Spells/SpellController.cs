@@ -167,8 +167,8 @@ public class SpellController : MonoBehaviour
         spellSlot3.GetComponent<Animator>().enabled = false;
         spellSlot3.sprite = equippedSpells[2].icon;
         //
-        // spellSlot4.GetComponent<Animator>().enabled = false;
-        // spellSlot4.sprite = equippedSpells[3].icon;
+         spellSlot4.GetComponent<Animator>().enabled = false;
+        spellSlot4.sprite = equippedSpells[3].icon;
         //
         // spellSlot5.GetComponent<Animator>().enabled = false;
         // spellSlot5.sprite = equippedSpells[4].icon;

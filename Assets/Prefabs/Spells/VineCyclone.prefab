@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8981916111660861382}
   - component: {fileID: 9046001203061145249}
   m_Layer: 0
-  m_Name: VineSpell
+  m_Name: VineCyclone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f969076821b5df6f690984cabaaf2d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spell
-  spellData: {fileID: 11400000, guid: e218c20df119ac743af4fc319214d430, type: 2}
+  spellData: {fileID: 11400000, guid: c9e3599c0f91b4147ac1cbc63b0f36c5, type: 2}
 --- !u!212 &8981916111660861382
 SpriteRenderer:
   serializedVersion: 2
