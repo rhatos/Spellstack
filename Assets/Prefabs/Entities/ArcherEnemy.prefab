@@ -192,6 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55518aa5e8e49fd3698ba7bd0740b2cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  defaultMat: {fileID: 0}
-  hitMat: {fileID: 0}
+  defaultMat: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  hitMat: {fileID: 2100000, guid: ad1ec7798dab8e905bd40a5764a32949, type: 2}
   behaviour: {fileID: 11400000, guid: 8a5aaaa903f2d1a819d5a1c4d26ec3a3, type: 2}

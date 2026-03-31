@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916a449a1544b2afe808d01f085c5ca8, type: 3}
   m_Name: Archer
   m_EditorClassIdentifier: Assembly-CSharp::ArcherBehaviourSO
-  enemyName: 
-  health: 0
-  damage: 0
+  enemyName: Archer Enemy
+  health: 10
+  damage: 2
   enemyPrefab: {fileID: 1675990806830609817, guid: 57777dc99a96e3dd2b694fc8c8b7ab09, type: 3}
+  knockedBack: 0
+  player: {fileID: 0}
+  moveSpeed: 5

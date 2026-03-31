@@ -15,14 +15,22 @@ public class Enemy : MonoBehaviour, Entity
     // Behaviour
     public EnemyBehaviourSO behaviour;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Animator anim;
+
+    void Awake(){
+        behaviour = Instantiate(behaviour);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         this.sprite = this.GetComponent<SpriteRenderer>();
         this.rb = this.GetComponent<Rigidbody2D>();
         this.anim = this.GetComponent<Animator>();
+        behaviour.rb = this.rb;
+        behaviour.sprite = this.sprite;
+        behaviour.anim = this.anim;
+        behaviour.player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -47,9 +55,12 @@ public class Enemy : MonoBehaviour, Entity
 
     IEnumerator KnockedBack(Vector2 direction){
 
+        behaviour.knockedBack = true;
         rb.linearVelocity = direction.normalized * 10;
         yield return new WaitForSeconds(0.2f);
         rb.linearVelocity = Vector2.zero;
+        behaviour.knockedBack = false;
+        behaviour.state = 0;
 
     }
 

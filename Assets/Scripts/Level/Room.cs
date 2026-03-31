@@ -23,6 +23,7 @@ public class Room
 
     public int roomPrefabNumber = 0;
 
+
     public void initRoom(){
 
         grid = new int[gridWidth,gridHeight];

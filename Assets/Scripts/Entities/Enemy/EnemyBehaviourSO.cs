@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 /*
  * enemy ai scriptable object
@@ -13,6 +14,15 @@ public abstract class EnemyBehaviourSO : ScriptableObject
     public float health;
     public float damage;
     public GameObject enemyPrefab;
+    public bool knockedBack = false;
+    [NonSerialized] public int state = 0;
+    [NonSerialized] public int prevState = 0;
+
+    [NonSerialized] public Animator anim;
+    [NonSerialized] public SpriteRenderer sprite;
+    [NonSerialized] public Rigidbody2D rb;
+    public PlayerController player;
+
 
     // Update is called once per frame
     public abstract void Update();
