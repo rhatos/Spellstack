@@ -69,8 +69,8 @@ public class SpellController : MonoBehaviour
         stateMachine.ChangeState(spellNoneState);
 
         equippedSpells[0] = spellCatalogue.getSpellByID(1); //change to id of spell combo for testing
-        equippedSpells[1] = spellCatalogue.getSpellByID(2);
-        equippedSpells[2] = spellCatalogue.getSpellByID(3);
+        equippedSpells[1] = spellCatalogue.getSpellByID(3);
+        equippedSpells[2] = spellCatalogue.getSpellByID(2);
         equippedSpells[3] = spellCatalogue.getSpellByID(4);
         equippedSpells[4] = spellCatalogue.getSpellByID(5);
         //add other slots to 5
@@ -144,7 +144,8 @@ public class SpellController : MonoBehaviour
 
         if (spellInput != combo)
         {
-            var key = (Mathf.Min(spellInput, combo), Mathf.Max(spellInput, combo));
+            if(equippedSpells[spellInput-1] != null && equippedSpells[combo-1] != null){
+            var key = (Mathf.Min(equippedSpells[spellInput-1].id, equippedSpells[combo-1].id), Mathf.Max(equippedSpells[spellInput-1].id, equippedSpells[combo-1].id));
             //check mapping to dictionary
             if (comboDictionary.TryGetValue(key, out int comboSpellID))
             {
@@ -160,6 +161,7 @@ public class SpellController : MonoBehaviour
             else
             {
                 Debug.Log($"No combo found for spells {spellInput} and {combo}");
+            }
             }
         }
         else
