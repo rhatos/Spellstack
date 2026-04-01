@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: 2d83977c52446d34b916359a56e6d91f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6081056084596013399
+    second: vine cyclone_0
+  - first:
+      213: -2094983760584394933
+    second: vine cyclone_1
+  - first:
+      213: -6727536215391657470
+    second: vine cyclone_2
+  - first:
+      213: 349677374844541083
+    second: vine cyclone_3
+  - first:
+      213: -6914467186477897042
+    second: vine cyclone_4
+  - first:
+      213: 3279542171479730787
+    second: vine cyclone_5
+  - first:
+      213: 5249029731794111385
+    second: vine cyclone_6
+  - first:
+      213: 640032444200381658
+    second: vine cyclone_7
+  - first:
+      213: -4631268358856258274
+    second: vine cyclone_8
+  - first:
+      213: -1239831662077764227
+    second: vine cyclone_9
+  - first:
+      213: -114261494742089537
+    second: vine cyclone_10
+  - first:
+      213: -6032378434815518234
+    second: vine cyclone_11
+  - first:
+      213: -5397913657081904251
+    second: vine cyclone_12
+  - first:
+      213: 313480659000388361
+    second: vine cyclone_13
+  - first:
+      213: -1189295848769863076
+    second: vine cyclone_14
+  - first:
+      213: 8712119710838192758
+    second: vine cyclone_15
+  - first:
+      213: 5421678211389668259
+    second: vine cyclone_16
+  - first:
+      213: 547457981049203430
+    second: vine cyclone_17
+  - first:
+      213: 294511808251046602
+    second: vine cyclone_18
+  - first:
+      213: -9152759480769126369
+    second: vine cyclone_19
+  - first:
+      213: 8435975425767691709
+    second: vine cyclone_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vine cyclone_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 144
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759b2954a40446450800000000000000
+      internalID: 6081056084596013399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47b7249e5f1de2e0800000000000000
+      internalID: -2094983760584394933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 144
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2022104c47df2a2a0800000000000000
+      internalID: -6727536215391657470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 144
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98999148bd4ad400800000000000000
+      internalID: 349677374844541083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaae3e27ab0ea00a0800000000000000
+      internalID: -6914467186477897042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a66fcaa36438d20800000000000000
+      internalID: 3279542171479730787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 96
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b4d030bbc48d840800000000000000
+      internalID: 5249029731794111385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 96
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adce941fd1ad1e800800000000000000
+      internalID: 640032444200381658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 48
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dcdd217fd6abfb0800000000000000
+      internalID: -4631268358856258274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d92981cab3bcee0800000000000000
+      internalID: -1239831662077764227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_10
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 48
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb08462a6cf0a6ef0800000000000000
+      internalID: -114261494742089537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 48
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9181246cfa84ca0800000000000000
+      internalID: -6032378434815518234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5834765d022c615b0800000000000000
+      internalID: -5397913657081904251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b6cab9ff4b95400800000000000000
+      internalID: 313480659000388361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_14
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52c9390ab5ce7fe0800000000000000
+      internalID: -1189295848769863076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vine cyclone_15
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a703dd7baa7e870800000000000000
+      internalID: 8712119710838192758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 819cbce4dfcc94b41b5fb53eaebcccfa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":47.0,"y":48.0},"gridSpriteOffset":{"x":1.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      vine cyclone_0: 6081056084596013399
+      vine cyclone_1: -2094983760584394933
+      vine cyclone_10: -114261494742089537
+      vine cyclone_11: -6032378434815518234
+      vine cyclone_12: -5397913657081904251
+      vine cyclone_13: 313480659000388361
+      vine cyclone_14: -1189295848769863076
+      vine cyclone_15: 8712119710838192758
+      vine cyclone_2: -6727536215391657470
+      vine cyclone_3: 349677374844541083
+      vine cyclone_4: -6914467186477897042
+      vine cyclone_5: 3279542171479730787
+      vine cyclone_6: 5249029731794111385
+      vine cyclone_7: 640032444200381658
+      vine cyclone_8: -4631268358856258274
+      vine cyclone_9: -1239831662077764227
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

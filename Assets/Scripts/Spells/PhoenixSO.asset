@@ -17,5 +17,5 @@ MonoBehaviour:
   manaCost: 0
   icon: {fileID: 0}
   speed: 0
-  id: 0
+  id: 11
   direction: {x: 0, y: 0}
