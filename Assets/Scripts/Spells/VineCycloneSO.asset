@@ -19,3 +19,4 @@ MonoBehaviour:
   speed: 0
   id: 13
   direction: {x: 19.501112, y: 12.045531}
+  changeDirection: 0

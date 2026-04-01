@@ -18,4 +18,5 @@ MonoBehaviour:
   icon: {fileID: 4334182692249300709, guid: 8bed35e18d57e8f45853fbf61b08693b, type: 3}
   speed: 0
   id: 4
-  direction: {x: 1.3101478, y: 1.5985707}
+  direction: {x: 0, y: 0}
+  changeDirection: 0

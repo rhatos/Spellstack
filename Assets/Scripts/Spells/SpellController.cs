@@ -36,7 +36,7 @@ public class SpellController : MonoBehaviour
     public SpellCatalog spellCatalogue;
 
     private Dictionary<(int, int), int> comboDictionary;
-    private static readonly HashSet<int> groundSpawnIDs = new HashSet<int> { 4, 9, 10, 13, 15, 11 };
+    private static readonly HashSet<int> groundSpawnIDs = new HashSet<int> { 4, 9, 10, 13, 14, 15, 11 };
     // Vine(4), Rock Spikes(9), Mudslide(10), Burning Vines (11), Vine Cyclone(13), Bog Trap(15)
 
 
@@ -90,7 +90,18 @@ public class SpellController : MonoBehaviour
        stateMachine.Update(); 
        float angle = Mathf.Atan2(player.direction.y, player.direction.x) * Mathf.Rad2Deg;
        stateText.text = "Spell State: " + angle + " | " + spellInput;
-       if(currentSpell != null) currentSpell.direction = player.direction;
+        if (currentSpell != null)
+        {
+            if (currentSpell.changeDirection == true)
+            {
+                currentSpell.direction = player.direction; //this is probably making cursor spells skew
+            }
+            else 
+            {
+                currentSpell.direction = new Vector2(0,0);            
+            }
+        }
+           
        if(spellInput != 0){
            cursor.transform.Rotate(Vector3.forward * 150f * Time.deltaTime);
        } else {

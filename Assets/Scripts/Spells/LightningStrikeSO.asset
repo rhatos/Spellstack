@@ -18,4 +18,5 @@ MonoBehaviour:
   icon: {fileID: 0}
   speed: 0
   id: 14
-  direction: {x: 4.183773, y: -5.6830616}
+  direction: {x: 0, y: 0}
+  changeDirection: 0
