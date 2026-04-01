@@ -9,6 +9,8 @@ public class GoblinBehaviourSO : EnemyBehaviourSO
     Vector3 moveDirection;
     public float moveSpeed = 10f;
 
+    public GameObject projectilePrefab;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -54,7 +56,18 @@ public class GoblinBehaviourSO : EnemyBehaviourSO
                 state = 0;
                 anim.SetBool("isRunning", true);
             }
+
+            // In the middle of the animation we spawn the "projectile"
+            if(anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.5f && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.6f){
+                Vector3 positionOfProjectile = rb.transform.position + (moveDirection * 2);
+                GameObject projectile = Instantiate(projectilePrefab,positionOfProjectile,Quaternion.identity);
+                projectile.GetComponent<GoblinProjectile>().direction = -moveDirection;
+            }
         }
+
+        // Vector3 cameraDisplacement = (cursorPosition.position - playerPosition.position) * distance;
+        // Vector3 finalCameraPosition = playerPosition.position + cameraDisplacement;
+        // finalCameraPosition.z = -10;
 
     }
 }
