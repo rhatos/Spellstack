@@ -19,7 +19,8 @@ public class Room
     public GameObject roomPrefab;
 
     // Active list of entities
-    List<Entity> entities = new List<Entity>();
+    Dictionary<int, GameObject> entities = new Dictionary<int, GameObject>();
+    Dictionary<int, Transform> spawnPoints = new Dictionary<int, Transform>();
 
     public int roomPrefabNumber = 0;
 
@@ -28,12 +29,48 @@ public class Room
 
         grid = new int[gridWidth,gridHeight];
         roomPrefab.SetActive(false);
+        this.spawnPoints = roomPrefab.GetComponent<RoomController>().spawnPoints;
+
+    }
+
+    // Generates which entities are placed, called from levelcontroller.
+    public void generateEntities(List<GameObject> enemyPrefabs, List<GameObject> chestPrefabs, int numberOfEnemies, bool generateChest){
+
+        // Base number of enemies +- 2/1
+        numberOfEnemies += Random.Range(-2,2);
+
+        int noSpawned = 0;
+        int totalNumberOfSpawnPoints = spawnPoints.Count-1;
+
+
+
+        // Potentially infinite loop but its probably fine haha :)
+        while(noSpawned != numberOfEnemies){
+
+            int randomSpawnPointIndex = Random.Range(0,spawnPoints.Count);
+            if(entities.ContainsKey(randomSpawnPointIndex)) continue;
+
+            Transform t = spawnPoints[randomSpawnPointIndex];
+
+            // First need to check if a chest should be generated.
+            // check here ....
+
+            // Now choose an enemy entity at random.
+            GameObject chosenEnemy = enemyPrefabs[Random.Range(0,enemyPrefabs.Count)];
+            // Then we need the roomController to instantiate it.
+            entities.Add(randomSpawnPointIndex,roomPrefab.GetComponent<RoomController>().instantiateEntity(chosenEnemy,t));
+            noSpawned++;
+
+
+        }
+        
+
     }
 
     public void enterRoom(){
 
-        foreach(Entity e in entities){
-            e.getObject().SetActive(true);
+        foreach(GameObject e in entities.Values){
+            e.SetActive(true);
         }
 
         roomPrefab.SetActive(true);
@@ -41,8 +78,8 @@ public class Room
 
     public Room exitRoom(int moveIntoRoom){
 
-        foreach(Entity e in entities){
-            e.getObject().SetActive(false);
+        foreach(GameObject e in entities.Values){
+            e.SetActive(false);
         }
 
         roomPrefab.SetActive(false);

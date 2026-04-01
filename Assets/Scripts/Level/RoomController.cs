@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class RoomController : MonoBehaviour
 {
@@ -11,7 +12,17 @@ public class RoomController : MonoBehaviour
     public RoomTrigger enterEastRoomTrigger;
     public RoomTrigger enterWestRoomTrigger;
 
+    public Dictionary<int,Transform> spawnPoints = new Dictionary<int,Transform>();
+    public GameObject spawnPointHolder;
+
     void Awake(){
+
+        // Add all spawn points
+        int idx = 0;
+        foreach(Transform t in spawnPointHolder.GetComponentsInChildren<Transform>()){
+            spawnPoints.Add(idx,t);
+            idx++;
+        }
 
         if(enterSouthRoomTrigger != null){
             enterSouthRoomTrigger.EnteredTrigger += OnEnterRoomSouthTrigger;
@@ -32,6 +43,12 @@ public class RoomController : MonoBehaviour
         enterWestRoomTrigger.EnteredTrigger += OnEnterRoomWestTrigger;
         enterWestRoomTrigger.ExitedTrigger += OnExitRoomWestTrigger;
         }
+    }
+
+    public GameObject instantiateEntity(GameObject e, Transform t){
+        GameObject o = Instantiate(e,t.position,Quaternion.identity);
+        o.SetActive(false);
+        return o;
     }
 
     void OnEnterRoomSouthTrigger(Collider2D other){
