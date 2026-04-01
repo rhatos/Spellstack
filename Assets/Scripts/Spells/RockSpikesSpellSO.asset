@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: RockSpikesSpellSO
   m_EditorClassIdentifier: Assembly-CSharp::RockSpikesSO
   spellName: Rock Spikes
-  projectilePrefab: {fileID: 1280763381249394419, guid: 5514345d73c370b4bbeaa60e99155daf, type: 3}
+  projectilePrefab: {fileID: 6161608042799395772, guid: 0745b99b21be83c4c842e597977fc2c2, type: 3}
   manaCost: 0
   icon: {fileID: 0}
-  speed: 0
+  speed: 15
   id: 9
-  direction: {x: 0, y: 0}
+  direction: {x: 11.0454035, y: 8.384888}

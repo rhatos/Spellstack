@@ -49,10 +49,12 @@ public class SpellController : MonoBehaviour
     {
         stateMachine.ChangeState(spellNoneState);
 
-        equippedSpells[0] = spellCatalogue.getSpellByID(1);
+        equippedSpells[0] = spellCatalogue.getSpellByID(12); //change to id of spell combo for testing
         equippedSpells[1] = spellCatalogue.getSpellByID(2);
         equippedSpells[2] = spellCatalogue.getSpellByID(3);
-
+        equippedSpells[3] = spellCatalogue.getSpellByID(4);
+        equippedSpells[4] = spellCatalogue.getSpellByID(5);
+        //add other slots to 5
         initSpellSlots();
 
     }
@@ -79,14 +81,17 @@ public class SpellController : MonoBehaviour
      * 60 to -30 = right
      * -150 to -30 = down
      */
-
+    
+    //combo is the most recent hot bar number
     public void CastSpell(int combo){
 
         // Include logic to determine which spell to cast.
         if(spellInput != combo){
             //... handle combo
             // Just hardcoding for now, will implement a better system later
+            //spellInput and combo are spells 1 and 2
             if(spellInput + combo == 3){
+                //change the getSpellByID(n) to the spell id
                 currentSpell = spellCatalogue.getSpellByID(6);
                 GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
                 Spell spellProjectile = spellObject.GetComponent<Spell>();
@@ -170,7 +175,7 @@ public class SpellController : MonoBehaviour
          spellSlot4.GetComponent<Animator>().enabled = false;
         spellSlot4.sprite = equippedSpells[3].icon;
         //
-        // spellSlot5.GetComponent<Animator>().enabled = false;
-        // spellSlot5.sprite = equippedSpells[4].icon;
+        spellSlot5.GetComponent<Animator>().enabled = false;
+        spellSlot5.sprite = equippedSpells[4].icon;
     }
 }

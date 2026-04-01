@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WaterStrikeSO
   m_EditorClassIdentifier: Assembly-CSharp::WaterStrikeSO
   spellName: Water Strike
-  projectilePrefab: {fileID: 1280763381249394419, guid: b58433b992845ed479a7c03ce4faec38, type: 3}
+  projectilePrefab: {fileID: 4248869833767528732, guid: 5a3b3d26493e2af4fa01608e4138af50, type: 3}
   manaCost: 0
-  icon: {fileID: 0}
-  speed: 0
+  icon: {fileID: 3061024552773289076, guid: 9227a237b8faa4f4eb47bda2e41ec7da, type: 3}
+  speed: 30
   id: 5
-  direction: {x: 0, y: 0}
+  direction: {x: 9.174852, y: 6.098529}

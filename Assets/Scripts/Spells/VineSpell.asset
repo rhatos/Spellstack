@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f805e2d8531a174aa3d3cf5054b6cbe, type: 3}
   m_Name: VineSpell
   m_EditorClassIdentifier: Assembly-CSharp::VineSpellSO
-  spellName: 
-  projectilePrefab: {fileID: 0}
+  spellName: Vine Spell
+  projectilePrefab: {fileID: 2475045446226605140, guid: 1c43094f07e41f442882572098b6068d, type: 3}
   manaCost: 0
-  icon: {fileID: 0}
-  speed: 0
+  icon: {fileID: 4334182692249300709, guid: 8bed35e18d57e8f45853fbf61b08693b, type: 3}
+  speed: 25
   id: 4
-  direction: {x: 0, y: 0}
+  direction: {x: 8.265272, y: 1.2622986}
