@@ -55,11 +55,8 @@ public class Enemy : MonoBehaviour, Entity
     // Common on-hit stuff
     public void onHitFlashWhite(int damage){
         StartCoroutine(FlashWhite());
-<<<<<<< HEAD
         AudioManager.instance.Play("Mob Damage");
-=======
         behaviour.health -= damage;
->>>>>>> conor
     }
 
     public void onHitKnockBack(Vector2 direction, float amount){
