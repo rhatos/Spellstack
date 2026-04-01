@@ -1,5 +1,16 @@
 using UnityEngine;
 
+// TODO:
+// Boids based movement
+    // Archer needs several states
+    // -1     Knocked back -> Reset by enemy to 0
+    // 0.     Walk up to player
+    // 1.2.   Aim at player - on the correct y level
+    // 2.     Shoot at player whilst on y level
+    // So we need a way to track state
+    // 0 = walk up to player
+    // 1 = aim at player, i.e: move to correct y level
+    // 2 = shooting
 [CreateAssetMenu(menuName = "Enemies/ArcherEnemy")]
 public class ArcherBehaviourSO : EnemyBehaviourSO
 {
@@ -8,6 +19,8 @@ public class ArcherBehaviourSO : EnemyBehaviourSO
     public float attackRange = 10f;
     
     Vector3 moveDirection;
+
+    public GameObject projectilePrefab;
 
     public override void Update(){
 
@@ -60,6 +73,7 @@ public class ArcherBehaviourSO : EnemyBehaviourSO
             }
         }
 
+        // Shooting state
         if(state == 2){
 
             // Check if player has moved away
@@ -68,14 +82,20 @@ public class ArcherBehaviourSO : EnemyBehaviourSO
                 state = 0;
             }
 
+            // Check if player has moved away in the y
             float yDistance = Mathf.Abs(player.transform.position.y - rb.transform.position.y);
             float tolerance = 1.2f;
             if(yDistance > tolerance) state = 1;
 
 
 
+            // End of archer shooting animation
+            // Also when it shoots the projectile
             if(anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f){
-                Debug.Log("Shoot");
+                GameObject projectile = Instantiate(projectilePrefab,rb.transform.position,Quaternion.identity);
+
+                // Added some random number to direction for a nicer feeling.
+                projectile.GetComponent<ArcherProjectile>().direction = new Vector2(Mathf.RoundToInt(moveDirection.x),moveDirection.y + Random.Range(-0.1f,0.1f));
                 anim.Play("ArcherShoot",-1,0f);
             }
 
@@ -85,16 +105,5 @@ public class ArcherBehaviourSO : EnemyBehaviourSO
 
     }
 
-    // No this is not gen ai, I just needed to write my thought process out
-    // Archer needs several states
-    // -1     Knocked back -> Reset by enemy to 0
-    // 0.     Walk up to player
-    // 1.2.   Aim at player - on the correct y level
-    // 2.     Shoot at player whilst on y level
-    //
-    // So we need a way to track state
-    // 0 = walk up to player
-    // 1 = aim at player, i.e: move to correct y level
-    // 2 = shooting
 
 }
