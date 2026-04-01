@@ -61,8 +61,16 @@ public class LevelGenerator : MonoBehaviour
         foreach(int i in roomLayout){
 
             if(i > 0){
-                Room r = new Room();
-                r.index = num;
+                Room r;
+                if(endRooms.Contains(num)){
+
+                    r = new Room(true);
+                } else {
+
+                    r = new Room(false);
+                }
+
+
                 levelController.addRoom(r, num);
             }
             num++;

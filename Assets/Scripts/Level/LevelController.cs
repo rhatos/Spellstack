@@ -18,13 +18,10 @@ public class LevelController : MonoBehaviour
     public bool canSwitchRooms = true;
 
     // DEBUG
-    Room startRoom = new Room();
-    Room differentRoom = new Room();
-    Room differentRoomAgain = new Room();
-    //
     public int numberOfEnemiesPerRoom = 5;
     public int numberOfChestsInLevel = 5;
     private int availableChestsLeft = 5;
+
 
     public Minimap miniMap;
 
@@ -36,31 +33,9 @@ public class LevelController : MonoBehaviour
         
     }
 
-    void setupDebugRoom(){
-
-        // Room connections
-        startRoom.adjacentRooms[1] = differentRoom;
-
-        // Change this to test collisions @joshua
-        startRoom.roomPrefabNumber = 13;
-
-        differentRoom.adjacentRooms[0] = startRoom;
-        differentRoom.adjacentRooms[1] = differentRoomAgain;
-
-        differentRoom.determinePrefabNumber();
-
-
-        differentRoomAgain.adjacentRooms[0] = differentRoom;
-        differentRoomAgain.roomPrefabNumber = 1;
-
-        addRoom(startRoom,45);
-        addRoom(differentRoom,55);
-        addRoom(differentRoomAgain,56);
-
-    }
-
     public void addRoom(Room room, int position){
         rooms[position] = room;
+        rooms[position].index = position;
     }
 
     // Just for testing
@@ -71,7 +46,11 @@ public class LevelController : MonoBehaviour
 
     // Level generator also calls this
     public void initRooms(){
-
+        //
+        // foreach(Room r in rooms){
+        //     if(r)
+        // }
+        bool generatedBoss = false;
         foreach(Room r in rooms){
 
             if(r != null){
@@ -85,15 +64,21 @@ public class LevelController : MonoBehaviour
                 r.roomPrefab.GetComponent<RoomController>().levelController = this;
                 r.initRoom();
 
+                if(r.endRoom && !generatedBoss){
+                    r.generateEntities(enemyPrefabs,chestPrefabs,numberOfEnemiesPerRoom, false,true);
+                    generatedBoss = true;
+                } else {
+
                 bool generateChest = false;
                 if(Random.Range(0,3) == 1 && availableChestsLeft > 0) generateChest = true;
-                if(r.index != 45) r.generateEntities(enemyPrefabs,chestPrefabs,numberOfEnemiesPerRoom, generateChest);
+                if(r.index != 45) r.generateEntities(enemyPrefabs,chestPrefabs,numberOfEnemiesPerRoom, generateChest,false);
                 if(generateChest && r.index != 45) availableChestsLeft--;
 
 
-
+                }
             }
         }
+
 
 
         // Starting room

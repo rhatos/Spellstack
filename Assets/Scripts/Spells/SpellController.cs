@@ -18,6 +18,7 @@ public class SpellController : MonoBehaviour
     public Image spellSlot4;
     public Image spellSlot5;
     //
+public Material shinyMat;
 
     public PlayerController player;
     public GameObject cursor;
@@ -69,10 +70,10 @@ public class SpellController : MonoBehaviour
         stateMachine.ChangeState(spellNoneState);
 
         equippedSpells[0] = spellCatalogue.getSpellByID(2); //change to id of spell combo for testing
-        equippedSpells[1] = spellCatalogue.getSpellByID(3);
+        // equippedSpells[1] = spellCatalogue.getSpellByID(4);
         // equippedSpells[2] = spellCatalogue.getSpellByID(2);
         // equippedSpells[3] = spellCatalogue.getSpellByID(4);
-        equippedSpells[4] = spellCatalogue.getSpellByID(5);
+        // equippedSpells[4] = spellCatalogue.getSpellByID(5);
         //add other slots to 5
         initSpellSlots();
         //ID 1: ROCK SPELL
@@ -186,27 +187,30 @@ public class SpellController : MonoBehaviour
 
         // Check where each spell is
         if(spellInput == 1){
-            spellSlot1.GetComponent<Animator>().enabled = true;
-            spellSlot1.GetComponent<Animator>().SetBool("isSelected", true);
-            spellSlot1.GetComponent<Animator>().SetInteger("spellChoice", 1);
+            spellSlot1.GetComponent<Image>().material = shinyMat;
         }
 
         if(spellInput == 2){
-            spellSlot2.GetComponent<Animator>().enabled = true;
-            spellSlot2.GetComponent<Animator>().SetBool("isSelected", true);
-            spellSlot2.GetComponent<Animator>().SetInteger("spellChoice", 2);
+            spellSlot2.GetComponent<Image>().material = shinyMat;
         } 
 
         if(spellInput == 3){
-            spellSlot3.GetComponent<Animator>().enabled = true;
-            spellSlot3.GetComponent<Animator>().SetBool("isSelected", true);
-            spellSlot3.GetComponent<Animator>().SetInteger("spellChoice", 3);
+            spellSlot3.GetComponent<Image>().material = shinyMat;
+        }
+
+        if(spellInput == 4){
+            spellSlot4.GetComponent<Image>().material = shinyMat;
+        }
+        if(spellInput == 5){
+            spellSlot5.GetComponent<Image>().material = shinyMat;
         }
 
         if(spellInput == 0) {
-            spellSlot2.GetComponent<Animator>().SetBool("isSelected", false);
-            spellSlot1.GetComponent<Animator>().SetBool("isSelected", false);
-            initSpellSlots();
+            spellSlot1.GetComponent<Image>().material = null;
+            spellSlot2.GetComponent<Image>().material = null;
+            spellSlot3.GetComponent<Image>().material = null;
+            spellSlot4.GetComponent<Image>().material = null;
+            spellSlot5.GetComponent<Image>().material = null;
         }
 
 

@@ -24,6 +24,12 @@ public class Room
 
     public int roomPrefabNumber = 0;
 
+    public bool endRoom;
+
+    public Room(bool endRoom){
+        this.endRoom = endRoom;
+
+    }
 
     public void initRoom(){
 
@@ -34,7 +40,7 @@ public class Room
     }
 
     // Generates which entities are placed, called from levelcontroller.
-    public void generateEntities(List<GameObject> enemyPrefabs, List<GameObject> chestPrefabs, int numberOfEnemies, bool generateChest){
+    public void generateEntities(List<GameObject> enemyPrefabs, List<GameObject> chestPrefabs, int numberOfEnemies, bool generateChest, bool generateBoss){
 
         // Base number of enemies +- 2/1
         numberOfEnemies += Random.Range(-2,2);
@@ -45,7 +51,7 @@ public class Room
 
 
         // Potentially infinite loop but its probably fine haha :)
-        while(noSpawned != numberOfEnemies){
+        while(noSpawned != numberOfEnemies && !generateBoss){
 
             int randomSpawnPointIndex = Random.Range(0,spawnPoints.Count);
             if(entities.ContainsKey(randomSpawnPointIndex)) continue;
@@ -53,7 +59,8 @@ public class Room
             Transform t = spawnPoints[randomSpawnPointIndex];
 
             // Now choose an enemy entity at random.
-            GameObject chosenEnemy = enemyPrefabs[Random.Range(0,enemyPrefabs.Count)];
+            GameObject chosenEnemy = enemyPrefabs[Random.Range(0,enemyPrefabs.Count-1)];
+
             // Then we need the roomController to instantiate it.
             entities.Add(randomSpawnPointIndex,roomPrefab.GetComponent<RoomController>().instantiateEntity(chosenEnemy,t));
             noSpawned++;
@@ -61,7 +68,7 @@ public class Room
 
         }
 
-        if(generateChest){
+        if(generateChest && !generateBoss){
             bool chestGenerated = false;
             while(!chestGenerated){
                 int randomSpawnPointIndex = Random.Range(0,spawnPoints.Count);
@@ -71,6 +78,14 @@ public class Room
                 entities.Add(randomSpawnPointIndex,roomPrefab.GetComponent<RoomController>().instantiateEntity(chest,t));
                 chestGenerated = true;
             }
+        }
+
+        if(generateBoss){
+            int randomSpawnPointIndex = Random.Range(0,spawnPoints.Count);
+            Transform t = spawnPoints[randomSpawnPointIndex];
+            GameObject chosenEnemy = enemyPrefabs[3];
+            entities.Add(randomSpawnPointIndex,roomPrefab.GetComponent<RoomController>().instantiateEntity(chosenEnemy,t));
+
         }
         
 
