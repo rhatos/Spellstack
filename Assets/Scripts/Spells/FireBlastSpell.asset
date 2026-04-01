@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FireBlastSO
   spellName: Fire Blast
   projectilePrefab: {fileID: 1280763381249394419, guid: c8c2e88f7a950514788ac8f1487841a6, type: 3}
-  manaCost: 1
+  manaCost: 0
   icon: {fileID: 8075412001945968807, guid: bdb5a89efa0fbd703aac39115b966144, type: 3}
-  activeAnimation: {fileID: 7400000, guid: f3f73917a575a55fe909fcc3ca387ed5, type: 2}
   speed: 25
   id: 2
-  direction: {x: 0.2841177, y: 11.041398}
+  direction: {x: 9.911369, y: 0.018541932}
