@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f507985c04cc5fcf8a134da0614e3dcf, type: 3}
+  m_Name: FireBallSpell
+  m_EditorClassIdentifier: Assembly-CSharp::FireBallSO
+  spellName: Fire Ball
+  projectilePrefab: {fileID: 6828925168349706206, guid: 46acec16078e9478993ee6f81df9ad66, type: 3}
+  manaCost: 10
+  icon: {fileID: 0}
+  speed: 22
+  id: 6
+  direction: {x: 9.983767, y: 10.270885}

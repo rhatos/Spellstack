@@ -11,7 +11,7 @@ public class SpellNoneState : SpellState {
     }
 
     public override void Enter(){
-        
+       spellController.spellInput = 0; 
     }
 
     public override void Exit(){
@@ -24,10 +24,30 @@ public class SpellNoneState : SpellState {
 
     public override void Update(){
 
-        if(Keyboard.current[Key.Digit5].wasPressedThisFrame){
-            Debug.Log("Spell pressed");
+        if(Keyboard.current[Key.Digit1].wasPressedThisFrame){
+            spellController.spellInput = 1;
+            stateMachine.ChangeState(spellController.spellSelectedState);
+        } 
+
+        if(Keyboard.current[Key.Digit2].wasPressedThisFrame){
+            spellController.spellInput = 2;
+            stateMachine.ChangeState(spellController.spellSelectedState);
         }
+
+        if(Keyboard.current[Key.Digit3].wasPressedThisFrame){
+            spellController.spellInput = 3;
+            stateMachine.ChangeState(spellController.spellSelectedState);
+        }
+
+        if(Keyboard.current[Key.Digit4].wasPressedThisFrame){
+            spellController.spellInput = 4;
+            stateMachine.ChangeState(spellController.spellSelectedState);
+        }       
        
+        if(Keyboard.current[Key.Digit5].wasPressedThisFrame){
+            spellController.spellInput = 5;
+            stateMachine.ChangeState(spellController.spellSelectedState);
+        }
     }
 
 }

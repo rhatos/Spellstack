@@ -1,6 +1,8 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
     // Components
     public Rigidbody2D rb {get; private set;}
     public Animator animator {get; private set;}
+    private SpriteRenderer sprite;
 
     // Inputs
     // Consumed by the states
@@ -34,7 +37,20 @@ public class PlayerController : MonoBehaviour
     public PlayerIdleState idleState {get; private set;}
     public PlayerMoveState moveState {get; private set;}
     public PlayerDashState dashState {get; private set;}
-    // Dash State
+
+    // Each heart holds a quarter
+    // There are 6 hearts, so 6x4 = 24
+    public int health = 24;
+    
+    // Mana Bar
+    public float maxMana = 200f;
+    public float currentMana = 200f;
+    public float regenRate = 5f;
+
+    // Hit material
+    public Material defaultMat;
+    public Material hitMat;
+
 
     void Awake(){
         rb = GetComponent<Rigidbody2D>();
@@ -52,6 +68,7 @@ public class PlayerController : MonoBehaviour
     {
         // Start in idle state
         stateMachine.ChangeState(idleState);
+        this.sprite = this.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -59,6 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         // This feels criminal or can cause performance issues. But maybe I just don't understand unity. :)
         MoveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if(MoveInput == new Vector2(0,0)) rb.linearVelocity = new Vector2(0,0);
         DashPressed = Input.GetButton("Jump");
         stateMachine.Update(); 
 
@@ -80,6 +98,14 @@ public class PlayerController : MonoBehaviour
         stateText.text = "State: " + stateMachine.CurrentState.ToString();
         Debug.DrawRay(transform.position,direction,Color.red);
 
+        if(currentMana < maxMana){
+            currentMana += regenRate * Time.deltaTime;
+        }
+
+        if(health <= 0){
+            SceneManager.LoadScene("Scenes/MainMenu");
+        }
+
     }
 
     void FixedUpdate(){
@@ -89,4 +115,23 @@ public class PlayerController : MonoBehaviour
     public void SetVelocity(Vector2 velocity){
         rb.linearVelocity = velocity;
     }
+
+    public void getHit(int damage){
+        health -= damage;
+        AudioManager.instance.Play("Player Damage");
+        StartCoroutine(FlashWhite());
+
+    }
+
+    IEnumerator FlashWhite(){
+
+        this.sprite.material = hitMat;
+
+        yield return new WaitForSeconds(0.2f);
+
+        this.sprite.material = defaultMat;
+
+    }
+
+
 }

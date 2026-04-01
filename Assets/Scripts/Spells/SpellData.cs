@@ -1,0 +1,23 @@
+using UnityEngine;
+using System;
+
+public abstract class SpellData : ScriptableObject
+{
+    [Header("General")]
+    public string spellName;
+    public GameObject projectilePrefab;
+    public int manaCost;
+    public Sprite icon;
+    public float speed;
+    public int damage = 1;
+    public int id;
+    public Vector2 direction;
+    public bool changeDirection = true;
+
+    [NonSerialized] public Rigidbody2D rb;
+    [NonSerialized] public Animator anim;
+
+    public abstract void OnHit(GameObject target, GameObject projectile);
+    public abstract void FixedUpdate();
+
+}

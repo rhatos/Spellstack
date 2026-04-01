@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: a76f42faadb25b872a4833390da76a08
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9182835387972610062
+    second: rock_spell_0
+  - first:
+      213: -2360733826355063782
+    second: rock_spell_1
+  - first:
+      213: -4786750540017290918
+    second: rock_spell_2
+  - first:
+      213: 6262278816140613669
+    second: rock_spell_3
+  - first:
+      213: -6498333114940986291
+    second: rock_spell_4
+  - first:
+      213: 1767405644169449846
+    second: rock_spell_5
+  - first:
+      213: 4967696675104582384
+    second: rock_spell_6
+  - first:
+      213: 4933208116891506038
+    second: rock_spell_7
+  - first:
+      213: 4296452367523010762
+    second: rock_spell_8
+  - first:
+      213: -907770447687761323
+    second: rock_spell_9
+  - first:
+      213: -6592852353547823055
+    second: rock_spell_10
+  - first:
+      213: -3320153803889903484
+    second: rock_spell_11
+  - first:
+      213: 1980725130872095858
+    second: rock_spell_12
+  - first:
+      213: -8383373746715204145
+    second: rock_spell_13
+  - first:
+      213: 6674098622001522209
+    second: rock_spell_14
+  - first:
+      213: 6985580166915263815
+    second: rock_spell_15
+  - first:
+      213: 8812678706032782556
+    second: rock_spell_16
+  - first:
+      213: 5655178676869443846
+    second: rock_spell_17
+  - first:
+      213: -6162376325053618102
+    second: rock_spell_18
+  - first:
+      213: -7393363479568657346
+    second: rock_spell_19
+  - first:
+      213: -11880404945492316
+    second: rock_spell_20
+  - first:
+      213: 6667214160392155216
+    second: rock_spell_21
+  - first:
+      213: 2559200036179005474
+    second: rock_spell_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rock_spell_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 603
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e086ef2f12cff6f70800000000000000
+      internalID: 9182835387972610062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 539
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a149bd6b71dfc3fd0800000000000000
+      internalID: -2360733826355063782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 475
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a513cd1cebb029db0800000000000000
+      internalID: -4786750540017290918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 411
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528d380876518e650800000000000000
+      internalID: 6262278816140613669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 347
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ce8cb267841d5a0800000000000000
+      internalID: -6498333114940986291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 283
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6719dbab116178810800000000000000
+      internalID: 1767405644169449846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa6f775ecdc0f440800000000000000
+      internalID: 4967696675104582384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 155
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675546225a6467440800000000000000
+      internalID: 4933208116891506038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac858982aa010ab30800000000000000
+      internalID: 4296452367523010762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_spell_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55249ff5693f663f0800000000000000
+      internalID: -907770447687761323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9e2a76d6e17234adea744201151f63aa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":77.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      rock_spell_0: 9182835387972610062
+      rock_spell_1: -2360733826355063782
+      rock_spell_2: -4786750540017290918
+      rock_spell_3: 6262278816140613669
+      rock_spell_4: -6498333114940986291
+      rock_spell_5: 1767405644169449846
+      rock_spell_6: 4967696675104582384
+      rock_spell_7: 4933208116891506038
+      rock_spell_8: 4296452367523010762
+      rock_spell_9: -907770447687761323
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

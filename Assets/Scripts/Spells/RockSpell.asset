@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6ae4c18225aebc8a7905653ce7b3dd, type: 3}
+  m_Name: RockSpell
+  m_EditorClassIdentifier: Assembly-CSharp::RockBallSO
+  spellName: Rock Spell
+  projectilePrefab: {fileID: 3717749891288129630, guid: 2d39b3d3f190de108a3808160c0d515d, type: 3}
+  manaCost: 10
+  icon: {fileID: -8984986850432704097, guid: 19df44499348f471a8befc0d96810716, type: 3}
+  speed: 20
+  id: 1
+  direction: {x: 5.0596237, y: -0.76172495}

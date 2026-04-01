@@ -10,6 +10,7 @@ public class PlayerIdleState : PlayerState {
     public override void Enter(){
         // Stop moving 
         player.SetVelocity(new Vector2(0,0)); 
+        player.animator.SetBool("isMoving", false);
     }
 
     public override void Update(){
@@ -23,6 +24,7 @@ public class PlayerIdleState : PlayerState {
         // Absolute it for the -1 case
         if(Mathf.Abs(player.MoveInput.x) > 0.01f || Mathf.Abs(player.MoveInput.y) > 0.01f){
             // Transition to move state
+            player.animator.SetBool("isMoving", true);
             stateMachine.ChangeState(player.moveState);
             return;
 
