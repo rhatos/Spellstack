@@ -40,6 +40,11 @@ public class PlayerController : MonoBehaviour
     // Each heart holds a quarter
     // There are 6 hearts, so 6x4 = 24
     public int health = 24;
+    
+    // Mana Bar
+    public float maxMana = 200f;
+    public float currentMana = 200f;
+    public float regenRate = 5f;
 
     // Hit material
     public Material defaultMat;
@@ -90,6 +95,10 @@ public class PlayerController : MonoBehaviour
         // Debug related
         stateText.text = "State: " + stateMachine.CurrentState.ToString();
         Debug.DrawRay(transform.position,direction,Color.red);
+
+        if(currentMana < maxMana){
+            currentMana += regenRate * Time.deltaTime;
+        }
 
     }
 

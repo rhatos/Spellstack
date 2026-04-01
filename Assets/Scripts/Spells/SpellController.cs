@@ -110,9 +110,17 @@ public class SpellController : MonoBehaviour
         } else {
             if(equippedSpells[spellInput-1] != null){
                 currentSpell = equippedSpells[spellInput-1];
-                GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
-                Spell spellProjectile = spellObject.GetComponent<Spell>();
-                spellProjectile.spellData = currentSpell;
+
+                // Check mana
+                if(player.currentMana >= currentSpell.manaCost){
+                    GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
+                    Spell spellProjectile = spellObject.GetComponent<Spell>();
+                    spellProjectile.spellData = currentSpell;
+                    player.currentMana -= currentSpell.manaCost;
+                } else {
+                    // Do something...
+                }
+
             } else {
                 Debug.Log("Out of bounds/no spell equipped");
             }
