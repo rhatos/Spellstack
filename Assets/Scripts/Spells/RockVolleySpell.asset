@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RockVolleySO
   spellName: Rock Volley
   projectilePrefab: {fileID: 1280763381249394419, guid: ce0b86903dc925c549c683e4f5465362, type: 3}
-  manaCost: 0
+  manaCost: 10
   icon: {fileID: 0}
   speed: 30
   id: 7

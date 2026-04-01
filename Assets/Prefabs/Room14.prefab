@@ -7577,6 +7577,7 @@ GameObject:
   - component: {fileID: 2058967242607621336}
   - component: {fileID: 327997659204992501}
   - component: {fileID: 2295741490026419332}
+  - component: {fileID: 1937712865797357048}
   m_Layer: 0
   m_Name: Room14
   m_TagString: Untagged
@@ -7593,7 +7594,7 @@ Transform:
   m_GameObject: {fileID: 7376240028950040787}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.76775, y: -1.52085, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -7606,6 +7607,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3816302675520104911
 BoxCollider2D:
+--- !u!114 &1937712865797357048
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8110,6 +8113,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.1776104, y: 4.0346117}
   m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2fbd83d47408f148584d997453b9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomController
+  levelController: {fileID: 0}
+  enterSouthRoomTrigger: {fileID: 92628415026177722}
+  enterNorthRoomTrigger: {fileID: 1311578973129021770}
+  enterEastRoomTrigger: {fileID: 0}
+  enterWestRoomTrigger: {fileID: 4952770142198506955}
 --- !u!1 &8179348577256066645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8122,7 +8134,7 @@ GameObject:
   - component: {fileID: 5638353232030537872}
   - component: {fileID: 92628415026177722}
   m_Layer: 0
-  m_Name: PlayerSpawnEast
+  m_Name: PlayerSpawnSouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

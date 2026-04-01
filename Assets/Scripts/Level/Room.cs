@@ -7,6 +7,7 @@ public class Room
     // Grid of entities
     public int gridWidth = 10;
     public int gridHeight = 10;
+    public int index = 0;
     int[,] grid;
 
     // Adjacent Rooms
@@ -21,6 +22,7 @@ public class Room
     List<Entity> entities = new List<Entity>();
 
     public int roomPrefabNumber = 0;
+
 
     public void initRoom(){
 
@@ -77,9 +79,9 @@ public class Room
 
         // 3 Entrances (4)
         if (up && down && left && !right) {roomPrefabNumber=13;} // Up, Down and Left only
-        if (up && down && !left && right) { } // Up, Down and Right only
+        if (up && down && !left && right) {roomPrefabNumber=15;} // Up, Down and Right only
         if (up && !down && left && right) {roomPrefabNumber=12;} // Up, Left and Right only
-        if (!up && down && left && right) { } // Down, Left and Right only
+        if (!up && down && left && right) {roomPrefabNumber=14;} // Down, Left and Right only
 
         // 4 Entrances (1)
         if (up && down && left && right) {roomPrefabNumber=3;} // 4 directions

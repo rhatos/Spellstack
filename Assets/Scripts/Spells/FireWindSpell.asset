@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FireWindSO
   spellName: Fire Wind
   projectilePrefab: {fileID: 1280763381249394419, guid: cbb7cafbdec51b4c69f5c9594abd5538, type: 3}
-  manaCost: 0
+  manaCost: 10
   icon: {fileID: 0}
   speed: 30
   id: 8
-  direction: {x: 4.7193375, y: 11.262091}
+  direction: {x: 9.132953, y: 0.6648071}

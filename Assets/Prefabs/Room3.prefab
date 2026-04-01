@@ -4688,9 +4688,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomController
   levelController: {fileID: 0}
-  enterSouthRoomTrigger: {fileID: 5582672728318250416}
+  enterSouthRoomTrigger: {fileID: 0}
   enterNorthRoomTrigger: {fileID: 5582672728318250416}
-  enterEastRoomTrigger: {fileID: 5582672728318250416}
+  enterEastRoomTrigger: {fileID: 0}
   enterWestRoomTrigger: {fileID: 8233821143895340977}
 --- !u!61 &9215859379030043896
 BoxCollider2D:

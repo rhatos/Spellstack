@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 934344074925976921}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.06591, y: 0.90088, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -82,8 +82,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomController
   levelController: {fileID: 0}
-  enterSouthRoomTrigger: {fileID: 3242235029736515400}
-  enterNorthRoomTrigger: {fileID: 3242235029736515400}
+  enterSouthRoomTrigger: {fileID: 0}
+  enterNorthRoomTrigger: {fileID: 0}
   enterEastRoomTrigger: {fileID: 3242235029736515400}
   enterWestRoomTrigger: {fileID: 96803555169278177}
 --- !u!61 &249650423050795445
