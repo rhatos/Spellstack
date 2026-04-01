@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
     {
         // This feels criminal or can cause performance issues. But maybe I just don't understand unity. :)
         MoveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if(MoveInput == new Vector2(0,0)) rb.linearVelocity = new Vector2(0,0);
         DashPressed = Input.GetButton("Jump");
         stateMachine.Update(); 
 

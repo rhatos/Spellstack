@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f64ab24d3a310b11d8b2c1b689b9a955, type: 3}
+  m_Name: Bat
+  m_EditorClassIdentifier: Assembly-CSharp::BatBehaviourSO
+  enemyName: 
+  health: 0
+  damage: 0
+  enemyPrefab: {fileID: 2339620620543714081, guid: ba2da86d4a11fb445bf1669dad7cfa62, type: 3}
+  knockedBack: 0
+  player: {fileID: 0}
+  moveSpeed: 5
+  distanceToPlayer: 8
+  projectilePrefab: {fileID: 7233619360506754071, guid: 2fcf5a8c37601e4eca3c79794c7b7ce1, type: 3}
