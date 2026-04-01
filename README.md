@@ -25,6 +25,10 @@
 
 Press the **Play** button above the Scene/Game view in the Unity Editor.
 
+Ensure that the AudioManager is within the shared scene list.
+
+Any issues with the game that occur please email us, thank you.
+
 ---
 
 ## Implementation

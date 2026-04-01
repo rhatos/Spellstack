@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 7f7ad592a34ad1b7493bfd64c3a232fa
+  - enabled: 1
+    path: Assets/Scenes/AudioManagerTest.unity
+    guid: 2a3d0817dc4c12944b257d2404ba4761
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dce0e3f0693ef10158f652f51dc96870, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

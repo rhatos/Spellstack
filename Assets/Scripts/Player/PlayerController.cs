@@ -69,6 +69,8 @@ public class PlayerController : MonoBehaviour
         // Start in idle state
         stateMachine.ChangeState(idleState);
         this.sprite = this.GetComponent<SpriteRenderer>();
+
+        SceneManager.LoadScene("AudioManagerTest", LoadSceneMode.Additive);
     }
 
     // Update is called once per frame
