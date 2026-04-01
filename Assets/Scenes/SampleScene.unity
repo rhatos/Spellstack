@@ -457,8 +457,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
+  m_sharedMaterial: {fileID: 7777443373182477392, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -796,8 +796,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
+  m_sharedMaterial: {fileID: 7777443373182477392, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1031,6 +1031,7 @@ GameObject:
   - component: {fileID: 507282000}
   - component: {fileID: 507281999}
   - component: {fileID: 507282001}
+  - component: {fileID: 507282002}
   m_Layer: 5
   m_Name: SpellSlot2
   m_TagString: Untagged
@@ -1118,6 +1119,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &507282002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507281996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc8fe6424fc7f1409c4d623d49ba4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellSelect
+  defaultMat: {fileID: 0}
+  selectedMat: {fileID: -876546973899608171, guid: 376a94f5b9b5d80678a569910b150e4e, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,6 +1268,7 @@ MonoBehaviour:
   - {fileID: 1675990806830609817, guid: 57777dc99a96e3dd2b694fc8c8b7ab09, type: 3}
   - {fileID: 5985242101021340427, guid: f0a3d7787b08952938821bd01d1bff15, type: 3}
   - {fileID: 2339620620543714081, guid: ba2da86d4a11fb445bf1669dad7cfa62, type: 3}
+  - {fileID: 9052210849405370973, guid: 2f25da40b07a16a56b2aa1e9c5d61745, type: 3}
   chestPrefabs:
   - {fileID: 2063542616306592046, guid: a03d918a79f269df2bd22ea431126594, type: 3}
   player: {fileID: 5217373288333724854}
@@ -1583,6 +1599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellSelector
   spellSelectionScreen: {fileID: 1498558782}
+  spellSelectorManager: {fileID: 1424471419}
 --- !u!4 &770151938
 Transform:
   m_ObjectHideFlags: 0
@@ -2191,8 +2208,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
+  m_sharedMaterial: {fileID: 7777443373182477392, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2783,6 +2800,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50f662c1c5791e2c3a5739ed787e3349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Heart
+--- !u!1 &1424471419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174129697974971264, guid: 3dd0d7de12940794e93052e0b3db95fb, type: 3}
+  m_PrefabInstance: {fileID: 1315241662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428356603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,6 +2817,7 @@ GameObject:
   - component: {fileID: 1428356607}
   - component: {fileID: 1428356606}
   - component: {fileID: 1428356608}
+  - component: {fileID: 1428356609}
   m_Layer: 5
   m_Name: SpellSlot1
   m_TagString: Untagged
@@ -2882,6 +2905,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1428356609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428356603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc8fe6424fc7f1409c4d623d49ba4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellSelect
+  defaultMat: {fileID: 0}
+  selectedMat: {fileID: -876546973899608171, guid: 376a94f5b9b5d80678a569910b150e4e, type: 3}
 --- !u!1 &1498558782 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3284114263569192686, guid: 3dd0d7de12940794e93052e0b3db95fb, type: 3}
@@ -3021,63 +3058,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507285628}
   m_CullTransparentMesh: 1
---- !u!1001 &1562184887
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.003915
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.608011
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2063542616306592046, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_Name
-      value: Chest
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a03d918a79f269df2bd22ea431126594, type: 3}
 --- !u!224 &1575789996 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6333904981725839380, guid: f4180112d486ab95cbb682c8773597a9, type: 3}
@@ -3421,6 +3401,7 @@ GameObject:
   - component: {fileID: 1814470402}
   - component: {fileID: 1814470401}
   - component: {fileID: 1814470403}
+  - component: {fileID: 1814470404}
   m_Layer: 5
   m_Name: SpellSlot4
   m_TagString: Untagged
@@ -3508,6 +3489,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1814470404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814470398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc8fe6424fc7f1409c4d623d49ba4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellSelect
+  defaultMat: {fileID: 0}
+  selectedMat: {fileID: -876546973899608171, guid: 376a94f5b9b5d80678a569910b150e4e, type: 3}
 --- !u!1 &1820127797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,7 +3611,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 2.050324
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3908,8 +3903,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
+  m_sharedMaterial: {fileID: 7777443373182477392, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3998,6 +3993,7 @@ GameObject:
   - component: {fileID: 1944421271}
   - component: {fileID: 1944421270}
   - component: {fileID: 1944421272}
+  - component: {fileID: 1944421273}
   m_Layer: 5
   m_Name: SpellSlot3
   m_TagString: Untagged
@@ -4085,6 +4081,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1944421273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944421267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc8fe6424fc7f1409c4d623d49ba4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellSelect
+  defaultMat: {fileID: 0}
+  selectedMat: {fileID: -876546973899608171, guid: 376a94f5b9b5d80678a569910b150e4e, type: 3}
 --- !u!1 &1971850664
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,8 +4154,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
+  m_sharedMaterial: {fileID: 7777443373182477392, guid: 64dd51b22018415eb84fa2d611563d3d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4234,6 +4244,7 @@ GameObject:
   - component: {fileID: 1999718679}
   - component: {fileID: 1999718678}
   - component: {fileID: 1999718680}
+  - component: {fileID: 1999718681}
   m_Layer: 5
   m_Name: SpellSlot5
   m_TagString: Untagged
@@ -4321,6 +4332,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1999718681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999718675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc8fe6424fc7f1409c4d623d49ba4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpellSelect
+  defaultMat: {fileID: 0}
+  selectedMat: {fileID: -876546973899608171, guid: 376a94f5b9b5d80678a569910b150e4e, type: 3}
 --- !u!1 &2000466970
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,6 +4382,7 @@ MonoBehaviour:
   spellSlot3: {fileID: 1944421270}
   spellSlot4: {fileID: 1814470401}
   spellSlot5: {fileID: 1999718678}
+  shinyMat: {fileID: -876546973899608171, guid: 376a94f5b9b5d80678a569910b150e4e, type: 3}
   player: {fileID: 5217373288333724854}
   cursor: {fileID: 4381180128008532358}
   spellInput: 0
@@ -4580,7 +4606,7 @@ MonoBehaviour:
   health: 24
   maxMana: 200
   currentMana: 200
-  regenRate: 5
+  regenRate: 10
   defaultMat: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   hitMat: {fileID: 2100000, guid: ad1ec7798dab8e905bd40a5764a32949, type: 2}
 --- !u!4 &5227845026185701604
@@ -4981,4 +5007,3 @@ SceneRoots:
   - {fileID: 432785784}
   - {fileID: 653712801}
   - {fileID: 770151938}
-  - {fileID: 1562184887}

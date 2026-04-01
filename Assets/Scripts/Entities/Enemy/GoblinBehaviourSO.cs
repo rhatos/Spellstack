@@ -7,7 +7,6 @@ public class GoblinBehaviourSO : EnemyBehaviourSO
 
     public float attackRange = 1f;
     Vector3 moveDirection;
-    public float moveSpeed = 10f;
 
     public GameObject projectilePrefab;
 

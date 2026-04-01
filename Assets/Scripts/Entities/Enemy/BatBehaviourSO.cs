@@ -5,7 +5,6 @@ using System.Collections;
 public class BatBehaviourSO : EnemyBehaviourSO
 {
 
-    public float moveSpeed = 5f;
     public float distanceToPlayer = 8f;
 
     Vector3 moveDirection;

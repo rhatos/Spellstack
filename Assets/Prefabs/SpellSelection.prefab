@@ -58,6 +58,12 @@ MonoBehaviour:
   - {fileID: -406496011657995516, guid: 091a0cdd720f12f47b6a13f9030d3b02, type: 3}
   - {fileID: 6639042383005908315, guid: 7747d0c144845e0478eb353baff9ae63, type: 3}
   - {fileID: -4317977134813113223, guid: 385538ceef5e71c419ce81314f20e2c0, type: 3}
+  spells:
+  - {fileID: 11400000, guid: fd995149a7b75fc819e572754464c661, type: 2}
+  - {fileID: 11400000, guid: 3a8f16ca4e4333161b7fe3924342b89f, type: 2}
+  - {fileID: 11400000, guid: e218c20df119ac743af4fc319214d430, type: 2}
+  - {fileID: 11400000, guid: 79f6582dae4e7154b8437b761f5d2902, type: 2}
+  - {fileID: 11400000, guid: ce80c204ec94c52dc910cd5981728a44, type: 2}
   player: {fileID: 0}
   spellController: {fileID: 0}
   spellButton1: {fileID: 6523190715744148365}

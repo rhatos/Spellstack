@@ -22,6 +22,7 @@ public abstract class EnemyBehaviourSO : ScriptableObject
     [NonSerialized] public SpriteRenderer sprite;
     [NonSerialized] public Rigidbody2D rb;
     public PlayerController player;
+    public float moveSpeed;
 
 
     // Update is called once per frame

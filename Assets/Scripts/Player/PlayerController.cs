@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -99,6 +100,10 @@ public class PlayerController : MonoBehaviour
 
         if(currentMana < maxMana){
             currentMana += regenRate * Time.deltaTime;
+        }
+
+        if(health <= 0){
+            SceneManager.LoadScene("Scenes/MainMenu");
         }
 
     }

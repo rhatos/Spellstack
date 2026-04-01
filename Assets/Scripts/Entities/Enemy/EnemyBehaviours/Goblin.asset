@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Goblin
   m_EditorClassIdentifier: Assembly-CSharp::GoblinBehaviourSO
   enemyName: 
-  health: 0
+  health: 5
   damage: 0
   enemyPrefab: {fileID: 5985242101021340427, guid: f0a3d7787b08952938821bd01d1bff15, type: 3}
   knockedBack: 0
   player: {fileID: 0}
-  attackRange: 2
   moveSpeed: 6
+  attackRange: 2
   projectilePrefab: {fileID: 1449943459797708477, guid: d836c15607c9cd03599fcd8f9a6ab8de, type: 3}

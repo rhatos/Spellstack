@@ -16,7 +16,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 8162834387986049676, guid: c35029f61e3be674aa0a306fc7e4193d, type: 3}
   manaCost: 10
   icon: {fileID: 0}
-  speed: 0
+  speed: 4
+  damage: 1
   id: 13
-  direction: {x: 19.501112, y: 12.045531}
+  direction: {x: 0, y: 0}
   changeDirection: 0

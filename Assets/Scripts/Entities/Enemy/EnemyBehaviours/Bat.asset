@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bat
   m_EditorClassIdentifier: Assembly-CSharp::BatBehaviourSO
   enemyName: 
-  health: 0
+  health: 5
   damage: 0
   enemyPrefab: {fileID: 2339620620543714081, guid: ba2da86d4a11fb445bf1669dad7cfa62, type: 3}
   knockedBack: 0
