@@ -141,36 +141,43 @@ public class SpellController : MonoBehaviour
     //combo is the most recent hot bar number
     public void CastSpell(int combo)
     {
-        if (player.currentMana > 10) 
+
+        if (spellInput != combo)
         {
-            if (spellInput != combo)
+            var key = (Mathf.Min(spellInput, combo), Mathf.Max(spellInput, combo));
+            //check mapping to dictionary
+            if (comboDictionary.TryGetValue(key, out int comboSpellID))
             {
-                var key = (Mathf.Min(spellInput, combo), Mathf.Max(spellInput, combo));
-                //check mapping to dictionary
-                if (comboDictionary.TryGetValue(key, out int comboSpellID))
+                currentSpell = spellCatalogue.getSpellByID(comboSpellID);
+                if (player.currentMana > currentSpell.manaCost)
                 {
-                    currentSpell = spellCatalogue.getSpellByID(comboSpellID);
                     InstantiateSpell(currentSpell);
-                    player.currentMana -= 10;
+                    player.currentMana -= currentSpell.manaCost;
                 }
-                else
-                {
-                    Debug.Log($"No combo found for spells {spellInput} and {combo}");
-                }
+                //else { } play sound
+                
             }
             else
             {
-                if (equippedSpells[spellInput - 1] != null)
-                {
-                    currentSpell = equippedSpells[spellInput - 1];
-                    InstantiateSpell(currentSpell);
-                    player.currentMana -= 10;
-                }
+                Debug.Log($"No combo found for spells {spellInput} and {combo}");
             }
-
-            spellInput = 0;
         }
-        
+        else
+        {
+            if (equippedSpells[spellInput - 1] != null)
+            {
+                currentSpell = equippedSpells[spellInput - 1];
+                if (player.currentMana > currentSpell.manaCost) 
+                {
+                    InstantiateSpell(currentSpell);
+                    player.currentMana -= currentSpell.manaCost;
+                }
+                //else { } play sound
+
+            }
+        }
+
+        spellInput = 0;
     }
 
     public void updateSpellSlots(){
