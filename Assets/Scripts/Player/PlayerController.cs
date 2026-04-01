@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
 
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     // Components
     public Rigidbody2D rb {get; private set;}
     public Animator animator {get; private set;}
+    private SpriteRenderer sprite;
 
     // Inputs
     // Consumed by the states
@@ -34,7 +36,14 @@ public class PlayerController : MonoBehaviour
     public PlayerIdleState idleState {get; private set;}
     public PlayerMoveState moveState {get; private set;}
     public PlayerDashState dashState {get; private set;}
-    // Dash State
+
+    // Each heart holds a quarter
+    // There are 6 hearts, so 6x4 = 24
+    public int health = 24;
+
+    // Hit material
+    public Material defaultMat;
+    public Material hitMat;
 
 
     void Awake(){
@@ -53,6 +62,7 @@ public class PlayerController : MonoBehaviour
     {
         // Start in idle state
         stateMachine.ChangeState(idleState);
+        this.sprite = this.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -90,4 +100,21 @@ public class PlayerController : MonoBehaviour
     public void SetVelocity(Vector2 velocity){
         rb.linearVelocity = velocity;
     }
+
+    public void getHit(int damage){
+        health -= damage;
+        StartCoroutine(FlashWhite());
+    }
+
+    IEnumerator FlashWhite(){
+
+        this.sprite.material = hitMat;
+
+        yield return new WaitForSeconds(0.2f);
+
+        this.sprite.material = defaultMat;
+
+    }
+
+
 }

@@ -18,6 +18,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1675990806830609817, guid: 57777dc99a96e3dd2b694fc8c8b7ab09, type: 3}
   knockedBack: 0
   player: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 6
   attackRange: 10
   projectilePrefab: {fileID: 4564215401967476734, guid: b6bac18c31941bf008cae0cf2588ec77, type: 3}
+  tolerance: 2

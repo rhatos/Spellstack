@@ -15,12 +15,15 @@ using UnityEngine;
 public class ArcherBehaviourSO : EnemyBehaviourSO
 {
 
-    public float moveSpeed = 1f;
+    public float moveSpeed = 6f;
     public float attackRange = 10f;
     
     Vector3 moveDirection;
 
     public GameObject projectilePrefab;
+
+    private float prevMoveSpeed = 0f;
+    public float tolerance = 2f;
 
     public override void Update(){
 
@@ -51,20 +54,23 @@ public class ArcherBehaviourSO : EnemyBehaviourSO
         // Move state
         if(state == 0){
 
+            if(prevMoveSpeed != 0) moveSpeed = prevMoveSpeed;
+
             rb.linearVelocity = new Vector2(moveDirection.x,moveDirection.y) * moveSpeed;
 
             // Check if close enough to player
             float distance = (player.transform.position - rb.transform.position).magnitude;
             if(distance < attackRange){
                 state = 1;
+                prevMoveSpeed = moveSpeed;
             }
         }
 
         // Aiming state, so we need to move in the y direction
         if(state == 1){
 
+            moveSpeed = 10f;
             float yDistance = Mathf.Abs(player.transform.position.y - rb.transform.position.y);
-            float tolerance = 1.2f;
 
             if(yDistance > tolerance){
                 rb.linearVelocity = new Vector2(0, moveDirection.y) * moveSpeed;
@@ -84,7 +90,6 @@ public class ArcherBehaviourSO : EnemyBehaviourSO
 
             // Check if player has moved away in the y
             float yDistance = Mathf.Abs(player.transform.position.y - rb.transform.position.y);
-            float tolerance = 1.2f;
             if(yDistance > tolerance) state = 1;
 
 
