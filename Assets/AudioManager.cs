@@ -45,6 +45,6 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-        Play("Theme"); //call music theme
+        Play("Music"); //call music theme
     }
 }

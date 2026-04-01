@@ -47,6 +47,7 @@ public class Enemy : MonoBehaviour, Entity
     // Common on-hit stuff
     public void onHitFlashWhite(){
         StartCoroutine(FlashWhite());
+        AudioManager.instance.Play("Mob Damage");
     }
 
     public void onHitKnockBack(Vector2 direction){

@@ -149,16 +149,124 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   sounds:
-  - clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    name: 
+  - clip: {fileID: 8300000, guid: 8e3e1e8ba5dc7aa4eab1d5409faefe15, type: 3}
+    volume: 0.228
+    pitch: 1.01
+    name: Music
+    loop: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: f3d60041be2a5384caf6ba2a573bb6a6, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Bog Trap
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    name: 
+  - clip: {fileID: 8300000, guid: a6df9b9017874134fb1b105cbcdd574a, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Burning Vines
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: b9ecc887d28f4dc48ba63d00b0e93e69, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Fire Ball
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: c07896bd5222f8e488476f03a9c9067d, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Fire Blast
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 2eebffc5ed2b7af418af78eeb32def90, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Lightning Strike
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 24c6a70b822e0d74cbb6faab64a98109, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Mob Damage
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 38b08ea3ef3649e448d40a42c822b58e, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: No Mana
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 3125b8eb5bc7d7b46aaddede85b03f99, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Player Damage
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: dbf3e59ee0b9fbe4898684ca2dd0bff9, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Rock Volley
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 875db1d44de9bf346a7db49f39c2e9ed, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Rock Spikes
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: ec40710921a1b634a947cd85c9a39b9c, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Rock Blast
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 5467030213f8be34ea19494526d7225c, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Steam Explosion
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 9257b2e583847f646b3d02eba264d98f, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Vine Cyclone
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 17ee42a3ef15fa74f9833de5f4fe2fb7, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Vines
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 0e06071e4cb92f8408b82a2f7b8ad1a3, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Water Strike
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 5859e1ba08e985845ad065a8201c58d9, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Wind Gust
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 3a2a4cf11cdc3d94abbe4e10878f2646, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Fire Wind
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: a1fb57eb0885229498698cd35454aa96, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Mudslide
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: a29ef809dee363049a9cccd7fdb52c3b, type: 3}
+    volume: 0.516
+    pitch: 0.69
+    name: Chest Open
     loop: 0
     source: {fileID: 0}
 --- !u!4 &292902688

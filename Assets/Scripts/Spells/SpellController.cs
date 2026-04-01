@@ -39,6 +39,24 @@ public class SpellController : MonoBehaviour
     private static readonly HashSet<int> groundSpawnIDs = new HashSet<int> { 4, 9, 10, 13, 14, 15, 11 };
     // Vine(4), Rock Spikes(9), Mudslide(10), Burning Vines (11), Vine Cyclone(13), Bog Trap(15)
 
+    private static readonly Dictionary<int, string> spellSounds = new Dictionary<int, string>() {
+    { 1,  "Rock Blast" },
+    { 2,  "Fire Blast" },
+    { 3,  "Wind Gust" },
+    { 4,  "Vines" },
+    { 5,  "Water Strike" },
+    { 6,  "Fire Ball" },
+    { 7,  "Rock Volley" },
+    { 8,  "Fire Wind" },
+    { 9,  "Rock Spikes" },
+    { 10, "Mudslide" },
+    { 11, "Burning Vines" },
+    { 12, "Steam Explosion" },
+    { 13, "Vine Cyclone" },
+    { 14, "Lightning Strike" },
+    { 15, "Bog Trap" },
+};
+
 
     void Awake(){
 
@@ -136,6 +154,11 @@ public class SpellController : MonoBehaviour
                 rb.bodyType = RigidbodyType2D.Kinematic; // prevents any physics from moving it
             }
         }
+
+        if (spellSounds.TryGetValue(spell.id, out string soundName))
+        {
+            AudioManager.instance.Play(soundName);
+        }
     }
 
     //combo is the most recent hot bar number
@@ -154,8 +177,8 @@ public class SpellController : MonoBehaviour
                     InstantiateSpell(currentSpell);
                     player.currentMana -= currentSpell.manaCost;
                 }
-                //else { } play sound
-                
+                else AudioManager.instance.Play("No Mana");
+
             }
             else
             {
@@ -167,12 +190,12 @@ public class SpellController : MonoBehaviour
             if (equippedSpells[spellInput - 1] != null)
             {
                 currentSpell = equippedSpells[spellInput - 1];
-                if (player.currentMana > currentSpell.manaCost) 
+                if (player.currentMana > currentSpell.manaCost)
                 {
                     InstantiateSpell(currentSpell);
                     player.currentMana -= currentSpell.manaCost;
                 }
-                //else { } play sound
+                else AudioManager.instance.Play("No Mana");
 
             }
         }
