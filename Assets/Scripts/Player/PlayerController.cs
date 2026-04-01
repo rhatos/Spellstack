@@ -118,7 +118,9 @@ public class PlayerController : MonoBehaviour
 
     public void getHit(int damage){
         health -= damage;
+        AudioManager.instance.Play("Player Damage");
         StartCoroutine(FlashWhite());
+
     }
 
     IEnumerator FlashWhite(){

@@ -33,7 +33,8 @@ public class Chest : MonoBehaviour
            isOpen = true;
            Vector3 cardPosition = new Vector3(transform.position.x,transform.position.y+0.7f,0);
            tempCard = Instantiate(cardPickUpPrefab,cardPosition,Quaternion.identity);
-       }
+            AudioManager.instance.Play("Chest Open");
+        }
 
        if(isOpen && canUse){
            if(Input.GetKeyDown(KeyCode.E)){
