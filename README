@@ -1,0 +1,32 @@
+# SPELLSTACK
+### -Conor Mckeag
+### -Jenna Rigby
+### -Joshua Diegaardt
+
+# Installation 
+### Prequisites:
+i) Unity Hub must be installed
+ii) Unity 6 must be installed (this can be done by following the instructions on the Unity hub or by following this online tutorial: https://learn.unity.com/pathway/junior-programmer/unit/player-control/tutorial/install-unity-software?version=6.0)
+When choosing which version of Unity 6 to install, select 6000.3.1.10f1
+iii) Git must be setup on your device or Github Desktop should be installed. In each case, you must sign into Github
+
+### Instructions:
+i) Clone the SPELLSTACK repo by running git clone https://github.com/rhatos/Spellstack.git in your terminal or using the link in Github Desktop
+ii) Open the Unity Hub and navigate to the location where the SPELLSTACK repo has been cloned
+iii) Open the project. It may take some time to compile all of the assets and scripts
+
+# Running the Game
+i) Press on the play button icon above the scene and game view
+
+# Implementation
+## Tutorials
+The Audion Manager system was implemented using a tutorial by Brackeys (https://www.youtube.com/watch?v=6OT43pvUyfY)
+## Gen AI
+- Gemini was used for some asset generation of spell combos, such as burning vines, bog trap, mudslide, vine cyclone and steam explosion.
+- Gemini was also used for generating code to move between the main menu, story overview and instruction screen
+## Ourselves
+We sourced 2d assets for most spells and character/mob sprites from itch.io. In some instances, these assets were adjusted to fit the game's aesthetic using Libresprite.
+We sourced sounds from pixabay and storyblock. In addition, we created some 8-bit sounds using bfxr.
+The music was created using Reaper DAW. The built-in synthesisers were used.
+Aside from the aforementioned AI-generated code, we created the codebase with minor assistance from AI for small changes.
+
