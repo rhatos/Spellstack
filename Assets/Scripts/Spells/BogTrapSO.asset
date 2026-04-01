@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: BogTrapSO
   m_EditorClassIdentifier: Assembly-CSharp::BogTrapSO
   spellName: Bog Trap
-  projectilePrefab: {fileID: 1280763381249394419, guid: b3a2ab509412fd048a28bdf2d32e33ae, type: 3}
-  manaCost: 0
+  projectilePrefab: {fileID: 1177901147950881399, guid: 569b59a3d301f9b4c9f6ef8ab19d32f1, type: 3}
+  manaCost: 10
   icon: {fileID: 0}
   speed: 0
   id: 15
-  direction: {x: 9.911369, y: 0.018541932}
+  direction: {x: 0, y: 0}
+  changeDirection: 0

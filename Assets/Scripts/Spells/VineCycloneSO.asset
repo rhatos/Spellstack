@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VineCycloneSO
   spellName: Vine Cyclone
   projectilePrefab: {fileID: 8162834387986049676, guid: c35029f61e3be674aa0a306fc7e4193d, type: 3}
-  manaCost: 0
+  manaCost: 10
   icon: {fileID: 0}
-  speed: 10
+  speed: 0
   id: 13
-  direction: {x: 9.911369, y: 0.018541932}
+  direction: {x: 19.501112, y: 12.045531}
+  changeDirection: 0

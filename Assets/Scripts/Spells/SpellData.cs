@@ -10,6 +10,7 @@ public abstract class SpellData : ScriptableObject
     public float speed;
     public int id;
     public Vector2 direction;
+    public bool changeDirection = true;
 
     public abstract void OnHit(GameObject target, GameObject projectile);
 

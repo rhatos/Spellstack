@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SteamExplosionSO
   spellName: Steam Explosion
   projectilePrefab: {fileID: 7876488047291795531, guid: ca9874e1c75d45e4d9f69bf5a8cf90ff, type: 3}
-  manaCost: 0
+  manaCost: 10
   icon: {fileID: 0}
   speed: 15
   id: 12

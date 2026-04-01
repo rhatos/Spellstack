@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: LightningStrikeSO
   m_EditorClassIdentifier: Assembly-CSharp::LightningStrikeSO
   spellName: Lightning Strike
-  projectilePrefab: {fileID: 7273734463763016068, guid: 4360bf168a0750841af39df64b6b0264, type: 3}
-  manaCost: 0
+  projectilePrefab: {fileID: 8902413659652083064, guid: 4360bf168a0750841af39df64b6b0264, type: 3}
+  manaCost: 10
   icon: {fileID: 0}
-  speed: 20
+  speed: 0
   id: 14
-  direction: {x: 9.911369, y: 0.018541932}
+  direction: {x: 0, y: 0}
+  changeDirection: 0

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BurningVinesSO
   spellName: Burning Vines
   projectilePrefab: {fileID: 5387950015178960336, guid: fa7fe42aee0728b44a1036aa78960e5b, type: 3}
-  manaCost: 0
+  manaCost: 10
   icon: {fileID: 0}
-  speed: 10
+  speed: 0
   id: 11
-  direction: {x: 9.911369, y: 0.018541932}
+  direction: {x: 0, y: 0}
+  changeDirection: 0
