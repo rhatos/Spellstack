@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour, Entity
     public Rigidbody2D rb;
     private Animator anim;
 
+    bool rooted = false;
+
     void Awake(){
         behaviour = Instantiate(behaviour);
     }
@@ -37,26 +39,41 @@ public class Enemy : MonoBehaviour, Entity
     void Update()
     {
        behaviour.Update(); 
+
+       if(behaviour.health <= 0){
+           Destroy(this.transform.gameObject);
+       }
     }
 
     void FixedUpdate(){
         behaviour.FixedUpdate();
+
+        if(rooted) rb.linearVelocity = new Vector2(0,0);
     }
 
 
     // Common on-hit stuff
-    public void onHitFlashWhite(){
+    public void onHitFlashWhite(int damage){
         StartCoroutine(FlashWhite());
+        behaviour.health -= damage;
     }
 
-    public void onHitKnockBack(Vector2 direction){
-        StartCoroutine(KnockedBack(direction));
+    public void onHitKnockBack(Vector2 direction, float amount){
+        StartCoroutine(KnockedBack(direction, amount));
     }
 
-    IEnumerator KnockedBack(Vector2 direction){
+    public void slowBriefly(float duration, float amount){
+        StartCoroutine(Slow(duration,amount));
+    }
+
+    public void rootInPlace(float duration){
+        StartCoroutine(Root(duration));
+    }
+
+    IEnumerator KnockedBack(Vector2 direction, float amount){
 
         behaviour.knockedBack = true;
-        rb.linearVelocity = direction.normalized * 10;
+        rb.linearVelocity = direction.normalized * amount;
         yield return new WaitForSeconds(0.2f);
         rb.linearVelocity = Vector2.zero;
         behaviour.knockedBack = false;
@@ -64,14 +81,34 @@ public class Enemy : MonoBehaviour, Entity
 
     }
 
+    IEnumerator Slow(float duration, float amount){
+
+        anim.speed = 0.5f;
+        float oldMoveSpeed = behaviour.moveSpeed;
+        behaviour.moveSpeed = behaviour.moveSpeed - amount;
+        yield return new WaitForSeconds(duration);
+        behaviour.moveSpeed = oldMoveSpeed;
+        anim.speed = 1;
+
+    }
+
+    IEnumerator Root(float duration){
+
+        anim.speed = 0.1f;
+        float oldMoveSpeed = behaviour.moveSpeed;
+        rooted = true;
+        rb.linearVelocity = new Vector2(0,0);
+        yield return new WaitForSeconds(duration);
+        rooted = false;
+        anim.speed = 1;
+
+    }
+    
     IEnumerator FlashWhite(){
 
         this.sprite.material = hitMat;
         anim.speed = 0;
-
         yield return new WaitForSeconds(0.2f);
-
-
         this.sprite.material = defaultMat;
         anim.speed = 1;
 

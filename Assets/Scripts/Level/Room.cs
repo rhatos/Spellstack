@@ -79,7 +79,8 @@ public class Room
     public void enterRoom(){
 
         foreach(GameObject e in entities.Values){
-            e.SetActive(true);
+
+            if(e != null) e.SetActive(true);
         }
 
         roomPrefab.SetActive(true);
@@ -88,7 +89,7 @@ public class Room
     public Room exitRoom(int moveIntoRoom){
 
         foreach(GameObject e in entities.Values){
-            e.SetActive(false);
+            if(e != null) e.SetActive(false);
         }
 
         roomPrefab.SetActive(false);

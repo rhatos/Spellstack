@@ -15,7 +15,6 @@ using UnityEngine;
 public class ArcherBehaviourSO : EnemyBehaviourSO
 {
 
-    public float moveSpeed = 6f;
     public float attackRange = 10f;
     
     Vector3 moveDirection;

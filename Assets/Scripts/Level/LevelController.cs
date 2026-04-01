@@ -86,7 +86,7 @@ public class LevelController : MonoBehaviour
                 r.initRoom();
 
                 bool generateChest = false;
-                if(Random.Range(0,6) == 1 && availableChestsLeft > 0) generateChest = true;
+                if(Random.Range(0,3) == 1 && availableChestsLeft > 0) generateChest = true;
                 if(r.index != 45) r.generateEntities(enemyPrefabs,chestPrefabs,numberOfEnemiesPerRoom, generateChest);
                 if(generateChest && r.index != 45) availableChestsLeft--;
 

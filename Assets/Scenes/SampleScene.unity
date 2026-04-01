@@ -1583,6 +1583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellSelector
   spellSelectionScreen: {fileID: 1498558782}
+  spellSelectorManager: {fileID: 1424471419}
 --- !u!4 &770151938
 Transform:
   m_ObjectHideFlags: 0
@@ -2783,6 +2784,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50f662c1c5791e2c3a5739ed787e3349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Heart
+--- !u!1 &1424471419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174129697974971264, guid: 3dd0d7de12940794e93052e0b3db95fb, type: 3}
+  m_PrefabInstance: {fileID: 1315241662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428356603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3021,63 +3027,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507285628}
   m_CullTransparentMesh: 1
---- !u!1001 &1562184887
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.003915
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.608011
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030784456258706899, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2063542616306592046, guid: a03d918a79f269df2bd22ea431126594, type: 3}
-      propertyPath: m_Name
-      value: Chest
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a03d918a79f269df2bd22ea431126594, type: 3}
 --- !u!224 &1575789996 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6333904981725839380, guid: f4180112d486ab95cbb682c8773597a9, type: 3}
@@ -3616,7 +3565,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 2.050324
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -4981,4 +4930,3 @@ SceneRoots:
   - {fileID: 432785784}
   - {fileID: 653712801}
   - {fileID: 770151938}
-  - {fileID: 1562184887}

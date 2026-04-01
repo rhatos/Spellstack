@@ -68,10 +68,10 @@ public class SpellController : MonoBehaviour
     {
         stateMachine.ChangeState(spellNoneState);
 
-        equippedSpells[0] = spellCatalogue.getSpellByID(1); //change to id of spell combo for testing
+        equippedSpells[0] = spellCatalogue.getSpellByID(2); //change to id of spell combo for testing
         equippedSpells[1] = spellCatalogue.getSpellByID(3);
-        equippedSpells[2] = spellCatalogue.getSpellByID(2);
-        equippedSpells[3] = spellCatalogue.getSpellByID(4);
+        // equippedSpells[2] = spellCatalogue.getSpellByID(2);
+        // equippedSpells[3] = spellCatalogue.getSpellByID(4);
         equippedSpells[4] = spellCatalogue.getSpellByID(5);
         //add other slots to 5
         initSpellSlots();
