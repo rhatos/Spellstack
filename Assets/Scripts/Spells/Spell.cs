@@ -36,6 +36,8 @@ public class Spell : MonoBehaviour
         if(other.CompareTag("Enemy")){
             spellData.OnHit(other.gameObject, this.gameObject);
             Debug.Log("Hit Enemy");
+            //deal damage to enemy, but this changes for each spell
+            //override this
         }
     }
 }

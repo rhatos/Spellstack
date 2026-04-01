@@ -1,0 +1,875 @@
+fileFormatVersion: 2
+guid: 60946d779fb5a6d4a802f00fb56343f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3309635294333882607
+    second: Water Blast_0
+  - first:
+      213: -8342201039998420424
+    second: Water Blast_1
+  - first:
+      213: -3415224957443085557
+    second: Water Blast_2
+  - first:
+      213: 565721953511587676
+    second: Water Blast_3
+  - first:
+      213: -2110300037946352228
+    second: Water Blast_4
+  - first:
+      213: -1181183185897579048
+    second: Water Blast_5
+  - first:
+      213: -2527930723493760207
+    second: Water Blast_6
+  - first:
+      213: -8594448620758776515
+    second: Water Blast_7
+  - first:
+      213: 8705820466073621906
+    second: Water Blast_8
+  - first:
+      213: -5492581925984827005
+    second: Water Blast_9
+  - first:
+      213: -1098276657334671541
+    second: Water Blast_10
+  - first:
+      213: 3555772298465129636
+    second: Water Blast_11
+  - first:
+      213: -6490204061025261957
+    second: Water Blast_12
+  - first:
+      213: -3548520050129778375
+    second: Water Blast_13
+  - first:
+      213: -1842891491299189300
+    second: Water Blast_14
+  - first:
+      213: 1628010325116951370
+    second: Water Blast_15
+  - first:
+      213: 9140651207853876021
+    second: Water Blast_16
+  - first:
+      213: 3302510287111943223
+    second: Water Blast_17
+  - first:
+      213: 2796634105405424203
+    second: Water Blast_18
+  - first:
+      213: 8151426158400318424
+    second: Water Blast_19
+  - first:
+      213: 6284338218102133727
+    second: Water Blast_20
+  - first:
+      213: 7239127265401316169
+    second: Water Blast_21
+  - first:
+      213: 732304525137128553
+    second: Water Blast_22
+  - first:
+      213: 3756642926331329349
+    second: Water Blast_23
+  - first:
+      213: 5265461165461246508
+    second: Water Blast_24
+  - first:
+      213: 7230217097079345738
+    second: Water Blast_25
+  - first:
+      213: 155088928869723668
+    second: Water Blast_26
+  - first:
+      213: -3484394884569215106
+    second: Water Blast_27
+  - first:
+      213: -2634703692626793707
+    second: Water Blast_28
+  - first:
+      213: 468273391509850119
+    second: Water Blast_29
+  - first:
+      213: 4261304275156071189
+    second: Water Blast_30
+  - first:
+      213: 5450121356702386411
+    second: Water Blast_31
+  - first:
+      213: -4509412466750543122
+    second: Water Blast_32
+  - first:
+      213: -4335627949768224140
+    second: Water Blast_33
+  - first:
+      213: 5213631470933418793
+    second: Water Blast_34
+  - first:
+      213: -7688192256006737954
+    second: Water Blast_35
+  - first:
+      213: 4194093946836345638
+    second: Water Blast_36
+  - first:
+      213: 3967201699437744141
+    second: Water Blast_37
+  - first:
+      213: -6965210771783532198
+    second: Water Blast_38
+  - first:
+      213: -4414668079073422233
+    second: Water Blast_39
+  - first:
+      213: 1477440362769407745
+    second: Water Blast_40
+  - first:
+      213: 2700814052538519575
+    second: Water Blast_41
+  - first:
+      213: 3990849753349370209
+    second: Water Blast_42
+  - first:
+      213: 7412919146644603344
+    second: Water Blast_43
+  - first:
+      213: -878352521424453048
+    second: Water Blast_44
+  - first:
+      213: 4365874450809301311
+    second: Water Blast_45
+  - first:
+      213: -4371092229172253283
+    second: Water Blast_46
+  - first:
+      213: -5792282108631102767
+    second: Water Blast_47
+  - first:
+      213: 2771458700380992819
+    second: Water Blast_48
+  - first:
+      213: 8356652023741669364
+    second: Water Blast_49
+  - first:
+      213: -6767988853650939695
+    second: Water Blast_50
+  - first:
+      213: -5453611233506708323
+    second: Water Blast_51
+  - first:
+      213: -7046596224793645205
+    second: Water Blast_52
+  - first:
+      213: 2147900227856042845
+    second: Water Blast_53
+  - first:
+      213: -4797649447999152514
+    second: Water Blast_54
+  - first:
+      213: 1030819543235302415
+    second: Water Blast_55
+  - first:
+      213: 8954011474304850500
+    second: Water Blast_56
+  - first:
+      213: 2600019712599212217
+    second: Water Blast_57
+  - first:
+      213: 2500463565734060944
+    second: Water Blast_58
+  - first:
+      213: -2555458879924001728
+    second: Water Blast_59
+  - first:
+      213: 617712857653004452
+    second: Water Blast_60
+  - first:
+      213: -5487595244301737838
+    second: Water Blast_61
+  - first:
+      213: 7128715637449321147
+    second: Water Blast_62
+  - first:
+      213: 1481683905939624747
+    second: Water Blast_63
+  - first:
+      213: 2461104073884805732
+    second: Water Blast_64
+  - first:
+      213: 2229895874335621238
+    second: Water Blast_65
+  - first:
+      213: 130602449449801469
+    second: Water Blast_66
+  - first:
+      213: -5572369761225818897
+    second: Water Blast_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Water Blast_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 259
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f22292c30d112d0800000000000000
+      internalID: -3309635294333882607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 259
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83afffd5a5c8a3c80800000000000000
+      internalID: -8342201039998420424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 259
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b6e8feefeaa90d0800000000000000
+      internalID: -3415224957443085557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 259
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fb2b09e19d9d700800000000000000
+      internalID: 565721953511587676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 259
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9dd6bcdb45b6b2e0800000000000000
+      internalID: -2110300037946352228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd19ed86289b9fe0800000000000000
+      internalID: -1181183185897579048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 198
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133bb59866cfaecd0800000000000000
+      internalID: -2527930723493760207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 198
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35c357c3826ab880800000000000000
+      internalID: -8594448620758776515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 198
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295d4a6a69941d870800000000000000
+      internalID: 8705820466073621906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 198
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38981f9d6dd66c3b0800000000000000
+      internalID: -5492581925984827005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47a676f23322c0f0800000000000000
+      internalID: -1098276657334671541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 137
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a43030f014a85130800000000000000
+      internalID: 3555772298465129636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 137
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76aac60bc92ee5a0800000000000000
+      internalID: -6490204061025261957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 137
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939c9a5b0df11cec0800000000000000
+      internalID: -3548520050129778375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 137
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd9585e3fbbc66e0800000000000000
+      internalID: -1842891491299189300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b934fd3cad79610800000000000000
+      internalID: 1628010325116951370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 76
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53320e328dd1ade70800000000000000
+      internalID: 9140651207853876021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 76
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7347162db9fd4dd20800000000000000
+      internalID: 3302510287111943223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 76
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42ce63d6e3afc620800000000000000
+      internalID: 2796634105405424203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 76
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db274827eeaf1170800000000000000
+      internalID: 8151426158400318424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd393624054763750800000000000000
+      internalID: 6284338218102133727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 15
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9432712b4eb867460800000000000000
+      internalID: 7239127265401316169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 15
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ca530f51ba92a00800000000000000
+      internalID: 732304525137128553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Blast_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 15
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b76f386d6422430800000000000000
+      internalID: 3756642926331329349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 782bd036db3fb1f4bbbd624a54fee48e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":61.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Water Blast_0: -3309635294333882607
+      Water Blast_1: -8342201039998420424
+      Water Blast_10: -1098276657334671541
+      Water Blast_11: 3555772298465129636
+      Water Blast_12: -6490204061025261957
+      Water Blast_13: -3548520050129778375
+      Water Blast_14: -1842891491299189300
+      Water Blast_15: 1628010325116951370
+      Water Blast_16: 9140651207853876021
+      Water Blast_17: 3302510287111943223
+      Water Blast_18: 2796634105405424203
+      Water Blast_19: 8151426158400318424
+      Water Blast_2: -3415224957443085557
+      Water Blast_20: 6284338218102133727
+      Water Blast_21: 7239127265401316169
+      Water Blast_22: 732304525137128553
+      Water Blast_23: 3756642926331329349
+      Water Blast_3: 565721953511587676
+      Water Blast_4: -2110300037946352228
+      Water Blast_5: -1181183185897579048
+      Water Blast_6: -2527930723493760207
+      Water Blast_7: -8594448620758776515
+      Water Blast_8: 8705820466073621906
+      Water Blast_9: -5492581925984827005
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b915f80b59f594a1695b85b39d761b25, type: 3}
   m_Name: FireWindSpell
   m_EditorClassIdentifier: Assembly-CSharp::FireWindSO
-  spellName: 
+  spellName: Fire Wind
   projectilePrefab: {fileID: 1280763381249394419, guid: cbb7cafbdec51b4c69f5c9594abd5538, type: 3}
   manaCost: 10
   icon: {fileID: 0}

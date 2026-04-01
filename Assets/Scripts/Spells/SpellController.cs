@@ -1,7 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.InputSystem;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class SpellController : MonoBehaviour
 {
@@ -34,6 +35,9 @@ public class SpellController : MonoBehaviour
     public SpellData currentSpell; // Actual spell cast, can be the combo or normal
     public SpellCatalog spellCatalogue;
 
+    private Dictionary<(int, int), int> comboDictionary;
+
+
     void Awake(){
 
         stateMachine = new StateMachine();
@@ -42,6 +46,19 @@ public class SpellController : MonoBehaviour
 
         equippedSpells = new SpellData[5];
 
+        comboDictionary = new Dictionary<(int, int), int>() {
+        { (1, 2), 6 },  // FIREBALL
+        { (1, 3), 7 },  // ROCK VOLLEY
+        { (2, 3), 8 },  // PHOENIX
+        { (1, 4), 9 },  // ROCK SPIKES
+        { (1, 5), 10 }, // MUDSLIDE
+        { (2, 4), 11 }, // BURNING VINES
+        { (2, 5), 12 }, // STEAM EXPLOSION
+        { (3, 4), 13 }, // VINE CYCLONE
+        { (3, 5), 14 }, // LIGHTNING STRIKE
+        { (4, 5), 15 }, // BOG TRAP
+    };
+
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,11 +66,19 @@ public class SpellController : MonoBehaviour
     {
         stateMachine.ChangeState(spellNoneState);
 
-        equippedSpells[0] = spellCatalogue.getSpellByID(1);
+        equippedSpells[0] = spellCatalogue.getSpellByID(1); //change to id of spell combo for testing
         equippedSpells[1] = spellCatalogue.getSpellByID(2);
         equippedSpells[2] = spellCatalogue.getSpellByID(3);
-
+        equippedSpells[3] = spellCatalogue.getSpellByID(4);
+        equippedSpells[4] = spellCatalogue.getSpellByID(5);
+        //add other slots to 5
         initSpellSlots();
+        //ID 1: ROCK SPELL
+        //ID 2: FIREBLAST
+        //ID 3: WIND GUST
+        //ID 4: VINE SPELL
+        //ID 5: WATER STRIKE
+
 
     }
 
@@ -80,54 +105,35 @@ public class SpellController : MonoBehaviour
      * -150 to -30 = down
      */
 
-    public void CastSpell(int combo){
-
-        // Include logic to determine which spell to cast.
-        if(spellInput != combo){
-            //... handle combo
-            // Just hardcoding for now, will implement a better system later
-            if(spellInput + combo == 3){
-                currentSpell = spellCatalogue.getSpellByID(6);
+    //combo is the most recent hot bar number
+    public void CastSpell(int combo)
+    {
+        if (spellInput != combo)
+        {
+            var key = (Mathf.Min(spellInput, combo), Mathf.Max(spellInput, combo));
+            //check mapping to dictionary
+            if (comboDictionary.TryGetValue(key, out int comboSpellID))
+            {
+                currentSpell = spellCatalogue.getSpellByID(comboSpellID);
                 GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
-                Spell spellProjectile = spellObject.GetComponent<Spell>();
-                spellProjectile.spellData = currentSpell;
+                spellObject.GetComponent<Spell>().spellData = currentSpell;
             }
-
-            if(spellInput + combo == 4){
-                currentSpell = spellCatalogue.getSpellByID(7);
+            else
+            {
+                Debug.Log($"No combo found for spells {spellInput} and {combo}");
+            }
+        }
+        else
+        {
+            if (equippedSpells[spellInput - 1] != null)
+            {
+                currentSpell = equippedSpells[spellInput - 1];
                 GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
-                Spell spellProjectile = spellObject.GetComponent<Spell>();
-                spellProjectile.spellData = currentSpell;
-            }
-
-            if(spellInput + combo == 5){
-                currentSpell = spellCatalogue.getSpellByID(8);
-                GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
-                Spell spellProjectile = spellObject.GetComponent<Spell>();
-                spellProjectile.spellData = currentSpell;
-            }
-
-        } else {
-            if(equippedSpells[spellInput-1] != null){
-                currentSpell = equippedSpells[spellInput-1];
-
-                // Check mana
-                if(player.currentMana >= currentSpell.manaCost){
-                    GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
-                    Spell spellProjectile = spellObject.GetComponent<Spell>();
-                    spellProjectile.spellData = currentSpell;
-                    player.currentMana -= currentSpell.manaCost;
-                } else {
-                    // Do something...
-                }
-
-            } else {
-                Debug.Log("Out of bounds/no spell equipped");
+                spellObject.GetComponent<Spell>().spellData = currentSpell;
             }
         }
 
         spellInput = 0;
-
     }
 
     public void updateSpellSlots(){
@@ -175,10 +181,10 @@ public class SpellController : MonoBehaviour
         spellSlot3.GetComponent<Animator>().enabled = false;
         spellSlot3.sprite = equippedSpells[2].icon;
         //
-        // spellSlot4.GetComponent<Animator>().enabled = false;
-        // spellSlot4.sprite = equippedSpells[3].icon;
+         spellSlot4.GetComponent<Animator>().enabled = false;
+        spellSlot4.sprite = equippedSpells[3].icon;
         //
-        // spellSlot5.GetComponent<Animator>().enabled = false;
-        // spellSlot5.sprite = equippedSpells[4].icon;
+        spellSlot5.GetComponent<Animator>().enabled = false;
+        spellSlot5.sprite = equippedSpells[4].icon;
     }
 }

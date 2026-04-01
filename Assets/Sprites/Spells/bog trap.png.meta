@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 5306c0c074cf37c4da215a8f9a36020d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8564580558844255245
+    second: bog trap_0
+  - first:
+      213: 3485606008362378535
+    second: bog trap_1
+  - first:
+      213: 5991699105576314199
+    second: bog trap_2
+  - first:
+      213: -9134863352814471299
+    second: bog trap_3
+  - first:
+      213: -61547364954924926
+    second: bog trap_4
+  - first:
+      213: 5163193937394713855
+    second: bog trap_5
+  - first:
+      213: 6532712309302932664
+    second: bog trap_6
+  - first:
+      213: -4396678366298781539
+    second: bog trap_7
+  - first:
+      213: 757274171850875929
+    second: bog trap_8
+  - first:
+      213: -6537491436555194242
+    second: bog trap_9
+  - first:
+      213: 5283481573563019373
+    second: bog trap_10
+  - first:
+      213: -251413647640131086
+    second: bog trap_11
+  - first:
+      213: -4851855393367673667
+    second: bog trap_12
+  - first:
+      213: -7170566849603292451
+    second: bog trap_13
+  - first:
+      213: -6357774922597620044
+    second: bog trap_14
+  - first:
+      213: 7122177310002104048
+    second: bog trap_15
+  - first:
+      213: 3447604990581561182
+    second: bog trap_16
+  - first:
+      213: -3787322110985439744
+    second: bog trap_17
+  - first:
+      213: -2672711230392669624
+    second: bog trap_18
+  - first:
+      213: -3594322234755036879
+    second: bog trap_19
+  - first:
+      213: -488485340903383671
+    second: bog trap_20
+  - first:
+      213: 8284599260940480556
+    second: bog trap_21
+  - first:
+      213: -6930066595400820499
+    second: bog trap_22
+  - first:
+      213: 7475875444747967245
+    second: bog trap_23
+  - first:
+      213: -4984307573144742998
+    second: bog trap_24
+  - first:
+      213: 3767446536424126902
+    second: bog trap_25
+  - first:
+      213: -7858677389713075542
+    second: bog trap_26
+  - first:
+      213: 5453822615711435249
+    second: bog trap_27
+  - first:
+      213: -5581180772213311445
+    second: bog trap_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bog trap_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 161
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f32fdbdb5f742980800000000000000
+      internalID: -8564580558844255245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 162
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7252863723c5f5030800000000000000
+      internalID: 3485606008362378535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 161
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755e6e4579ac62350800000000000000
+      internalID: 5991699105576314199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 160
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7772cfdd227a3180800000000000000
+      internalID: -9134863352814471299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 157
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28810076ff6552ff0800000000000000
+      internalID: -61547364954924926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_5
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 157
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4ccd0c78957a740800000000000000
+      internalID: 5163193937394713855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4b2d7cb3bd8aa50800000000000000
+      internalID: 6532712309302932664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_7
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 132
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98cd19025cdbf2c0800000000000000
+      internalID: -4396678366298781539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 132
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914efbad8d0628a00800000000000000
+      internalID: 757274171850875929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 132
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7038f1fc2a2645a0800000000000000
+      internalID: -6537491436555194242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_10
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 131
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60bb818f72b25940800000000000000
+      internalID: 5283481573563019373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_11
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 102
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f989b89e9cc28cf0800000000000000
+      internalID: -251413647640131086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4b1c8d93fbaacb0800000000000000
+      internalID: -4851855393367673667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 83
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2343b01770d7c90800000000000000
+      internalID: -7170566849603292451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 105
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6aea09465a4c7a0800000000000000
+      internalID: -6357774922597620044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_15
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 105
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6c50e478e07d260800000000000000
+      internalID: 7122177310002104048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 105
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e575a75097a58df20800000000000000
+      internalID: 3447604990581561182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_17
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 102
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006fabc2b9ab07bc0800000000000000
+      internalID: -3787322110985439744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a6f3deb4f98ead0800000000000000
+      internalID: -2672711230392669624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 83
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139432598f66e1ec0800000000000000
+      internalID: -3594322234755036879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 52
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dd779ab2d8839f0800000000000000
+      internalID: -488485340903383671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_21
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 83
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2032d6522fc8f270800000000000000
+      internalID: 8284599260940480556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_22
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 52
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de85557062573df90800000000000000
+      internalID: -6930066595400820499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_23
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 77
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b944dab15afb760800000000000000
+      internalID: 7475875444747967245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_24
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 54
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa31b639bae24dab0800000000000000
+      internalID: -4984307573144742998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9f5d10aa8a84430800000000000000
+      internalID: 3767446536424126902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_26
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa212c51d8e50f290800000000000000
+      internalID: -7858677389713075542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 3
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9c87df5cedfab40800000000000000
+      internalID: 5453822615711435249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bog trap_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 5
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b283cf478a9ab82b0800000000000000
+      internalID: -5581180772213311445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bog trap_0: -8564580558844255245
+      bog trap_1: 3485606008362378535
+      bog trap_10: 5283481573563019373
+      bog trap_11: -251413647640131086
+      bog trap_12: -4851855393367673667
+      bog trap_13: -7170566849603292451
+      bog trap_14: -6357774922597620044
+      bog trap_15: 7122177310002104048
+      bog trap_16: 3447604990581561182
+      bog trap_17: -3787322110985439744
+      bog trap_18: -2672711230392669624
+      bog trap_19: -3594322234755036879
+      bog trap_2: 5991699105576314199
+      bog trap_20: -488485340903383671
+      bog trap_21: 8284599260940480556
+      bog trap_22: -6930066595400820499
+      bog trap_23: 7475875444747967245
+      bog trap_24: -4984307573144742998
+      bog trap_25: 3767446536424126902
+      bog trap_26: -7858677389713075542
+      bog trap_27: 5453822615711435249
+      bog trap_28: -5581180772213311445
+      bog trap_3: -9134863352814471299
+      bog trap_4: -61547364954924926
+      bog trap_5: 5163193937394713855
+      bog trap_6: 6532712309302932664
+      bog trap_7: -4396678366298781539
+      bog trap_8: 757274171850875929
+      bog trap_9: -6537491436555194242
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
