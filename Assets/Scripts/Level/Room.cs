@@ -52,9 +52,6 @@ public class Room
 
             Transform t = spawnPoints[randomSpawnPointIndex];
 
-            // First need to check if a chest should be generated.
-            // check here ....
-
             // Now choose an enemy entity at random.
             GameObject chosenEnemy = enemyPrefabs[Random.Range(0,enemyPrefabs.Count)];
             // Then we need the roomController to instantiate it.
@@ -62,6 +59,18 @@ public class Room
             noSpawned++;
 
 
+        }
+
+        if(generateChest){
+            bool chestGenerated = false;
+            while(!chestGenerated){
+                int randomSpawnPointIndex = Random.Range(0,spawnPoints.Count);
+                if(entities.ContainsKey(randomSpawnPointIndex)) continue;
+                Transform t = spawnPoints[randomSpawnPointIndex];
+                GameObject chest = chestPrefabs[0];
+                entities.Add(randomSpawnPointIndex,roomPrefab.GetComponent<RoomController>().instantiateEntity(chest,t));
+                chestGenerated = true;
+            }
         }
         
 
