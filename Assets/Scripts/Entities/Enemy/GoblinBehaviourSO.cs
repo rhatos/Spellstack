@@ -41,7 +41,7 @@ public class GoblinBehaviourSO : EnemyBehaviourSO
             float distance = (player.transform.position - rb.transform.position).magnitude;
             rb.linearVelocity = new Vector2(moveDirection.x,moveDirection.y) * moveSpeed;
             anim.SetBool("isRunning", true);
-            if(distance < attackRange){
+            if(distance <= attackRange){
                 state = 1;
                 anim.SetBool("isRunning", false);
             }
@@ -58,16 +58,13 @@ public class GoblinBehaviourSO : EnemyBehaviourSO
             }
 
             // In the middle of the animation we spawn the "projectile"
-            if(anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.5f && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.6f){
+            float loopProgress = anim.GetCurrentAnimatorStateInfo(0).normalizedTime % 1f;
+            if(loopProgress >= 0.49f && loopProgress <= 0.51f){
                 Vector3 positionOfProjectile = rb.transform.position + (moveDirection * 2);
                 GameObject projectile = Instantiate(projectilePrefab,positionOfProjectile,Quaternion.identity);
                 projectile.GetComponent<GoblinProjectile>().direction = -moveDirection;
             }
         }
-
-        // Vector3 cameraDisplacement = (cursorPosition.position - playerPosition.position) * distance;
-        // Vector3 finalCameraPosition = playerPosition.position + cameraDisplacement;
-        // finalCameraPosition.z = -10;
 
     }
 }
