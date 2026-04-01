@@ -7607,8 +7607,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3816302675520104911
 BoxCollider2D:
---- !u!114 &1937712865797357048
-MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7641,7 +7639,7 @@ MonoBehaviour:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 3.4875383, y: 9.98704}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7651,7 +7649,7 @@ MonoBehaviour:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 13.953709, y: 2.313488}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!61 &7752775557997405215
 BoxCollider2D:
@@ -8113,10 +8111,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.1776104, y: 4.0346117}
   m_EdgeRadius: 0
+--- !u!114 &1937712865797357048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7376240028950040787}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f2fbd83d47408f148584d997453b9e8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RoomController
+  m_EditorClassIdentifier: 
   levelController: {fileID: 0}
   enterSouthRoomTrigger: {fileID: 92628415026177722}
   enterNorthRoomTrigger: {fileID: 1311578973129021770}
