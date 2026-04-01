@@ -36,6 +36,8 @@ public class SpellController : MonoBehaviour
     public SpellCatalog spellCatalogue;
 
     private Dictionary<(int, int), int> comboDictionary;
+    private static readonly HashSet<int> groundSpawnIDs = new HashSet<int> { 4, 9, 10, 13, 15, 11 };
+    // Vine(4), Rock Spikes(9), Mudslide(10), Burning Vines (11), Vine Cyclone(13), Bog Trap(15)
 
 
     void Awake(){
@@ -105,6 +107,26 @@ public class SpellController : MonoBehaviour
      * -150 to -30 = down
      */
 
+    private void InstantiateSpell(SpellData spell)
+    {
+        Vector3 spawnPos = groundSpawnIDs.Contains(spell.id)
+            ? cursor.transform.position
+            : player.transform.position;
+
+        GameObject spellObject = Instantiate(spell.projectilePrefab, spawnPos, player.transform.rotation);
+        spellObject.GetComponent<Spell>().spellData = spell;
+
+        if (groundSpawnIDs.Contains(spell.id))
+        {
+            Rigidbody2D rb = spellObject.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+                rb.bodyType = RigidbodyType2D.Kinematic; // prevents any physics from moving it
+            }
+        }
+    }
+
     //combo is the most recent hot bar number
     public void CastSpell(int combo)
     {
@@ -115,8 +137,7 @@ public class SpellController : MonoBehaviour
             if (comboDictionary.TryGetValue(key, out int comboSpellID))
             {
                 currentSpell = spellCatalogue.getSpellByID(comboSpellID);
-                GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
-                spellObject.GetComponent<Spell>().spellData = currentSpell;
+                InstantiateSpell(currentSpell);
             }
             else
             {
@@ -128,8 +149,7 @@ public class SpellController : MonoBehaviour
             if (equippedSpells[spellInput - 1] != null)
             {
                 currentSpell = equippedSpells[spellInput - 1];
-                GameObject spellObject = Instantiate(currentSpell.projectilePrefab, player.transform.position, player.transform.rotation);
-                spellObject.GetComponent<Spell>().spellData = currentSpell;
+                InstantiateSpell(currentSpell);
             }
         }
 

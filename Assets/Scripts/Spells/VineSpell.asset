@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: VineSpell
   m_EditorClassIdentifier: Assembly-CSharp::VineSpellSO
   spellName: Vine Spell
-  projectilePrefab: {fileID: 2475045446226605140, guid: 1c43094f07e41f442882572098b6068d, type: 3}
-  manaCost: 0
+  projectilePrefab: {fileID: 2557623385120024599, guid: 616fe7f5fab5612488d918c41af18610, type: 3}
+  manaCost: 10
   icon: {fileID: 4334182692249300709, guid: 8bed35e18d57e8f45853fbf61b08693b, type: 3}
-  speed: 25
+  speed: 0
   id: 4
-  direction: {x: 8.265272, y: 1.2622986}
+  direction: {x: 1.3101478, y: 1.5985707}
