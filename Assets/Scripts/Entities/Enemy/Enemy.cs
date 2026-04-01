@@ -71,6 +71,7 @@ public class Enemy : MonoBehaviour, Entity
 
         yield return new WaitForSeconds(0.2f);
 
+
         this.sprite.material = defaultMat;
         anim.speed = 1;
 

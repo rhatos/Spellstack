@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WindBlastSO
   spellName: Windblast Spell
   projectilePrefab: {fileID: 1280763381249394419, guid: 0aaff9582ca4a9b2f8236c66a4adc5df, type: 3}
-  manaCost: 50
+  manaCost: 10
   icon: {fileID: -5567054049065543188, guid: 0a29500197db7a87e975cf2e5a0a7421, type: 3}
   speed: 30
   id: 3
-  direction: {x: 1.3652945, y: 11.329725}
+  direction: {x: 2.7528028, y: 11.485975}
