@@ -10,13 +10,11 @@ public class LevelController : MonoBehaviour
     // Current room the player is in
     public Room currentRoom;
     public RoomController roomController; // initally null, but based on current room
-
     public Room[] rooms = new Room[100];
-
     public List<GameObject> roomPrefabs = new List<GameObject>();
-
+    public List<GameObject> enemyPrefabs = new List<GameObject>();
+    public List<GameObject> chestPrefabs = new List<GameObject>();
     public PlayerController player;
-
     public bool canSwitchRooms = true;
 
     // DEBUG
@@ -24,6 +22,9 @@ public class LevelController : MonoBehaviour
     Room differentRoom = new Room();
     Room differentRoomAgain = new Room();
     //
+    public int numberOfEnemiesPerRoom = 5;
+    public int numberOfChestsInLevel = 5;
+    private int availableChestsLeft = 5;
 
     public Minimap miniMap;
 
@@ -83,6 +84,12 @@ public class LevelController : MonoBehaviour
                 r.roomPrefab = roomPrefab;
                 r.roomPrefab.GetComponent<RoomController>().levelController = this;
                 r.initRoom();
+
+                bool generateChest = false;
+                if(Random.Range(0,6) == 1 && availableChestsLeft > 0) generateChest = true;
+                if(r.index != 45) r.generateEntities(enemyPrefabs,chestPrefabs,numberOfEnemiesPerRoom, generateChest);
+                if(generateChest && r.index != 45) availableChestsLeft--;
+
 
 
             }

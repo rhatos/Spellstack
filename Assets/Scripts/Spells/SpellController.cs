@@ -69,10 +69,10 @@ public class SpellController : MonoBehaviour
         stateMachine.ChangeState(spellNoneState);
 
         equippedSpells[0] = spellCatalogue.getSpellByID(1); //change to id of spell combo for testing
-        equippedSpells[1] = spellCatalogue.getSpellByID(2);
-        equippedSpells[2] = spellCatalogue.getSpellByID(3);
-        equippedSpells[3] = spellCatalogue.getSpellByID(4);
-        equippedSpells[4] = spellCatalogue.getSpellByID(5);
+        // equippedSpells[1] = spellCatalogue.getSpellByID(2);
+        // equippedSpells[2] = spellCatalogue.getSpellByID(3);
+        // equippedSpells[3] = spellCatalogue.getSpellByID(4);
+        // equippedSpells[4] = spellCatalogue.getSpellByID(5);
         //add other slots to 5
         initSpellSlots();
         //ID 1: ROCK SPELL
@@ -215,20 +215,30 @@ public class SpellController : MonoBehaviour
         // Set to false to change sprite initially.
         // Really hacky fix but unity sucks.
         //
-        spellSlot1.GetComponent<Animator>().enabled = false;
-        spellSlot1.sprite = equippedSpells[0].icon;
 
-        spellSlot2.GetComponent<Animator>().enabled = false;
-        spellSlot2.sprite = equippedSpells[1].icon;
+        if(equippedSpells[0] != null){
+            spellSlot1.GetComponent<Animator>().enabled = false;
+            spellSlot1.sprite = equippedSpells[0].icon;
+        }
 
+        if(equippedSpells[1] != null){
+            spellSlot2.GetComponent<Animator>().enabled = false;
+            spellSlot2.sprite = equippedSpells[1].icon;
+        }
+
+        if(equippedSpells[2] != null){
+            spellSlot3.GetComponent<Animator>().enabled = false;
+            spellSlot3.sprite = equippedSpells[2].icon;
+        }
         //
-        spellSlot3.GetComponent<Animator>().enabled = false;
-        spellSlot3.sprite = equippedSpells[2].icon;
+        if(equippedSpells[3] != null){
+            spellSlot4.GetComponent<Animator>().enabled = false;
+            spellSlot4.sprite = equippedSpells[3].icon;
+        }
         //
-         spellSlot4.GetComponent<Animator>().enabled = false;
-        spellSlot4.sprite = equippedSpells[3].icon;
-        //
-        spellSlot5.GetComponent<Animator>().enabled = false;
-        spellSlot5.sprite = equippedSpells[4].icon;
+        if(equippedSpells[4] != null){
+            spellSlot5.GetComponent<Animator>().enabled = false;
+            spellSlot5.sprite = equippedSpells[4].icon;
+        }
     }
 }
