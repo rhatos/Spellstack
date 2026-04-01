@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MudslideSO
   m_EditorClassIdentifier: Assembly-CSharp::MudslideSO
   spellName: Mudslide
-  projectilePrefab: {fileID: 1280763381249394419, guid: 23d3e1eaa0a6b6848be82bc22e9b9806, type: 3}
+  projectilePrefab: {fileID: 5989240382118072033, guid: 0bbb3e1e7a6c24e48afbb203063e7c31, type: 3}
   manaCost: 0
   icon: {fileID: 0}
   speed: 0

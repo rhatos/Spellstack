@@ -3487,7 +3487,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 604534457}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3836,7 +3836,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 2.050324
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -5260,3 +5260,4 @@ SceneRoots:
   - {fileID: 653712801}
   - {fileID: 302803788}
   - {fileID: 8101821640886793385}
+  - {fileID: 1618815799}
