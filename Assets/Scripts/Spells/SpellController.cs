@@ -141,30 +141,36 @@ public class SpellController : MonoBehaviour
     //combo is the most recent hot bar number
     public void CastSpell(int combo)
     {
-        if (spellInput != combo)
+        if (player.currentMana > 10) 
         {
-            var key = (Mathf.Min(spellInput, combo), Mathf.Max(spellInput, combo));
-            //check mapping to dictionary
-            if (comboDictionary.TryGetValue(key, out int comboSpellID))
+            if (spellInput != combo)
             {
-                currentSpell = spellCatalogue.getSpellByID(comboSpellID);
-                InstantiateSpell(currentSpell);
+                var key = (Mathf.Min(spellInput, combo), Mathf.Max(spellInput, combo));
+                //check mapping to dictionary
+                if (comboDictionary.TryGetValue(key, out int comboSpellID))
+                {
+                    currentSpell = spellCatalogue.getSpellByID(comboSpellID);
+                    InstantiateSpell(currentSpell);
+                    player.currentMana -= 10;
+                }
+                else
+                {
+                    Debug.Log($"No combo found for spells {spellInput} and {combo}");
+                }
             }
             else
             {
-                Debug.Log($"No combo found for spells {spellInput} and {combo}");
+                if (equippedSpells[spellInput - 1] != null)
+                {
+                    currentSpell = equippedSpells[spellInput - 1];
+                    InstantiateSpell(currentSpell);
+                    player.currentMana -= 10;
+                }
             }
-        }
-        else
-        {
-            if (equippedSpells[spellInput - 1] != null)
-            {
-                currentSpell = equippedSpells[spellInput - 1];
-                InstantiateSpell(currentSpell);
-            }
-        }
 
-        spellInput = 0;
+            spellInput = 0;
+        }
+        
     }
 
     public void updateSpellSlots(){
